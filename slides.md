@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: src/pexels-spacex-586019.jpg
+background: ./src/pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
 title: "Introduction to Data Engineering: History, Lifecycle, and Practice"
 info: "Intro to data engineering: history, lifecycle, and practice"
