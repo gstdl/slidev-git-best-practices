@@ -119,7 +119,7 @@ layout: two-cols-header
 
 ::right::
 
-<img src="../src/historical-cost-of-computer-memory-and-storage.png"/>
+<img src="./src/historical-cost-of-computer-memory-and-storage.png"/>
 
 <style>
 h2 {
@@ -147,7 +147,7 @@ layout: quote
 ---
 
 <!-- <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "> -->
-<img src="../src/de-lifecycle.png" class="h-lg" />
+<img src="./src/de-lifecycle.png" class="h-lg" />
 <!-- </div> -->
 
 ---
@@ -179,9 +179,9 @@ Things to consider from the data source:
 ::right::
 
 <div class="absolute inset-y-0 right-0 scale-2/3">
-<img src="../src/application-database.png"/>
+<img src="./src/application-database.png"/>
 Application database
-<img src="../src/message-queue.png"/>
+<img src="./src/message-queue.png"/>
 Message queue
 </div>
 
@@ -207,7 +207,7 @@ layout: two-cols-header
 ::left::
 
 <div class="absolute inset-y-0 -left-120 -top-30 scale-1/4">
-<img src="../src/byte-byte-go-cloud-database-cheat-sheet.jpg"/>
+<img src="./src/byte-byte-go-cloud-database-cheat-sheet.jpg"/>
 Cloud database cheatsheet
 </div>
 
@@ -245,12 +245,12 @@ transition: fade-out
 # Data Engineering Lifecycle: <h1-bold>Storage (Blob)</h1-bold>
 
 <div class="absolute -top-35 -left-100 scale-7/20">
-<img src="../src/gcs-storage-class.jpg"/>
+<img src="./src/gcs-storage-class.jpg"/>
 Google Cloud Storage Classes
 </div>
 
 <div class="absolute -bottom-35 -right-85 scale-7/20">
-<img src="../src/aws-s3-storage-class.jpeg"/>
+<img src="./src/aws-s3-storage-class.jpeg"/>
 Amazon Web Services  S3 Storage Class
 </div>
 
