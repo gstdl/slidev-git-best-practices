@@ -5,8 +5,8 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: ./src/pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
-title: "Introduction to Data Engineering: History, Lifecycle, and Practice"
-info: "Intro to data engineering: history, lifecycle, and practice"
+title: "Data Engineering History & Lifecycle"
+info: "Data Engineering History & Lifecycle"
 # apply unocss classes to the current slide
 class: text-left
 # https://sli.dev/features/drawing
@@ -18,7 +18,8 @@ transition: fade-out
 mdc: true
 ---
 
-# Introduction to Data Engineering: History, Lifecycle, and Practice
+# Data Engineering 
+## The History and Lifecycle
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -79,6 +80,17 @@ transition: fade-out
 - Ralph Kimball and Bill Inmon developed their data modeling techniques and approaches
 - Around the mid-1990s, AOL, Yahoo, and Amazon started emerging with the dot-com bubble
 
+<div class="grid grid-cols-2 grid-rows-2">
+  <div class="flex justify-center">
+    <img src=./src/Bill_Inmon.jpg>
+  </div>
+  <div class="flex justify-center">
+    <img src=./src/ralph-kimball.jpg>
+  </div>
+  <div class="flex justify-center">Bill Inmon</div>
+<div class="flex justify-center">Ralph Kimball</div>
+</div>
+
 <style>
 h2 {
   background-color: #2B90B6;
@@ -119,7 +131,11 @@ layout: two-cols-header
 
 ::right::
 
+<div class="absolute top-1/2 transform -translate-y-1/2 scale-62">
+<img src="./src/Moore's law.png"/>
+<p></p>
 <img src="./src/historical-cost-of-computer-memory-and-storage.png"/>
+</div>
 
 <style>
 h2 {
@@ -146,9 +162,9 @@ transition: fade-out
 layout: quote
 ---
 
-<!-- <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "> -->
+<div class="scale-98 absolute top-5 left-0">
 <img src="./src/de-lifecycle.png" class="h-lg" />
-<!-- </div> -->
+</div>
 
 ---
 transition: fade-out
