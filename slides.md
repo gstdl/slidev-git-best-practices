@@ -206,24 +206,24 @@ text-h {
 
 ---
 transition: fade-out
-layout: two-cols-header
 ---
 
 # Evolution of the Data Engineer
 ## 2020s: engineering for data engineering
 
-::left::
-
-- Era of the <text-h>modern data stack</text-h>
-- Not only does the data engineer work on building data pipelines, they also started focusing on <text-h>security, data governance, data quality, observability, operations, data management, orchestration, and data architecture</text-h>
-- Data engineer 
-
-::right::
-
-<div class="absolute top-85 transform -translate-y-1/2 scale-62">
-<img src="./src/2020-data-landscape.png"/>
-<p></p>
-<img src="./src/new-tech-meme.webp"/>
+<div class="grid grid-cols-3 gap-4">
+  <div class="col-span-2 content-center">
+    <ul>
+      <li>Era of the <text-h>modern data stack</text-h></li>
+      <li>Not only does the data engineer work on building data pipelines, they also started focusing on <text-h>security, data governance, data quality, observability, operations, data management, orchestration, and data architecture</text-h></li>
+      <li>The term <text-h>big data</text-h> gained popularity</li>
+    </ul>
+  </div>
+  <div>
+    <img src="./src/2020-data-landscape.png"/>
+    <p/>
+    <img src="./src/new-tech-meme.webp"/>
+  </div>
 </div>
 
 <style>
