@@ -132,7 +132,7 @@ layout: two-cols-header
 ::right::
 
 <div class="absolute top-1/2 transform -translate-y-1/2 scale-62">
-<img src="./src/Moore's law.png"/>
+<img src="./src/Moore's-law.png"/>
 <p></p>
 <img src="./src/historical-cost-of-computer-memory-and-storage.png"/>
 </div>
