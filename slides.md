@@ -216,7 +216,7 @@ transition: fade-out
     <ul>
       <li>Era of the <text-h>modern data stack</text-h></li>
       <li>Not only does the data engineer work on building data pipelines, they also started focusing on <text-h>security, data governance, data quality, observability, operations, data management, orchestration, and data architecture</text-h></li>
-      <li>The term <text-h>big data</text-h> gained popularity</li>
+      <li>There is a SaaS for every data tools</li>
     </ul>
   </div>
   <div>
