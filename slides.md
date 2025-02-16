@@ -5,8 +5,8 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: ./src/pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
-title: "Data Engineering History & Lifecycle"
-info: "Data Engineering History & Lifecycle"
+title: "Data Engineering History, People & Lifecycle"
+info: "Data Engineering History, People & Lifecycle"
 # apply unocss classes to the current slide
 class: text-left
 # https://sli.dev/features/drawing
@@ -19,7 +19,7 @@ mdc: true
 ---
 
 # Data Engineering 
-## The History and Lifecycle
+## The History, The People and The Lifecycle
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -75,8 +75,8 @@ transition: fade-out
 # Evolution of the Data Engineer
 ## 1980 to 2000: from data warehousing to the web
 
-- Bill Inmon coined the term data warehouse in 1989
-- IBM developed SQL
+- Bill Inmon coined the term <text-h>data warehouse</text-h> in 1989
+- IBM developed <text-h>SQL</text-h>
 - Ralph Kimball and Bill Inmon developed their data modeling techniques and approaches
 - Around the mid-1990s, AOL, Yahoo, and Amazon started emerging with the dot-com bubble
 
@@ -123,9 +123,9 @@ layout: two-cols-header
 
 - Bill Inmon published his book: Building the Data Warehouse
 - Ralph Kimball published his book: The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling
-- Hardware prices became cheap and gets faster
-- Google published a paper on Google File System in 2003
-- In 2004, Google published a paper about MapReduce
+- <text-h>Hardware became cheaper and faster</text-h>
+- Google published a paper on <text-h>Google File System</text-h> in 2003
+- In 2004, Google published a paper about <text-h>MapReduce</text-h>
 - Yahoo developed Apache Hadoop in 2006
 - Amazon created EC2, S3, DynamoDB, etc. 
 
@@ -135,6 +135,95 @@ layout: two-cols-header
 <img src="./src/Moore's law.png"/>
 <p></p>
 <img src="./src/historical-cost-of-computer-memory-and-storage.png"/>
+</div>
+
+<style>
+h2 {
+  background-color: #2B90B6;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+text-h {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Evolution of the Data Engineer
+## Early 2000s-2010s: The Hadoop Ecosystem & Big data
+
+<div class="grid grid-cols-3 gap-4">
+  <div class="content-center">
+    <ul>
+      <li><text-h>Hadoop ecosystem</text-h> matured</li>
+      <li>Focus was on optimizing the utilization and cost of the hadoop ecosystem</li>
+      <li>The term <text-h>big data</text-h> gained popularity</li>
+    </ul>
+  </div>
+  <div>
+    <img src="./src/hadoop-timeline.webp"/>
+    <p/>
+    <img src="./src/hadoop-cluster-architecture.webp"/>
+  </div>
+  <div>
+    <img src="./src/map-reduce.webp"/>
+    <p/>
+    <img src="./src/big-data-google-trends.png"/>
+  </div>
+</div>
+
+<style>
+h2 {
+  background-color: #2B90B6;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+text-h {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+layout: two-cols-header
+---
+
+# Evolution of the Data Engineer
+## 2020s: engineering for data engineering
+
+::left::
+
+- Era of the <text-h>modern data stack</text-h>
+- Not only does the data engineer work on building data pipelines, they also started focusing on <text-h>security, data governance, data quality, observability, operations, data management, orchestration, and data architecture</text-h>
+- Data engineer 
+
+::right::
+
+<div class="absolute top-85 transform -translate-y-1/2 scale-62">
+<img src="./src/2020-data-landscape.png"/>
+<p></p>
+<img src="./src/new-tech-meme.webp"/>
 </div>
 
 <style>
@@ -172,7 +261,6 @@ layout: two-cols-header
 ---
 
 # Data Engineering Lifecycle: <h1-bold>Generation</h1-bold>
-
 
 ::left::
 
