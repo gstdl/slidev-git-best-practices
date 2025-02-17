@@ -1,11 +1,7 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Data Engineering Fundamentals
 
-To start the slide show:
+https://gstdl.github.io/de-fundamentals/
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
+# Made using slidev
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
