@@ -293,6 +293,56 @@ text-h {
 
 ---
 transition: fade-out
+---
+
+# Data engineering purpose
+
+<div class="grid grid-cols-10 gap-2">
+  <div class="col-span-6 content-center">
+    <li>Minimize data <text-h>cost</text-h></li>
+    <li>Develop <text-h>agile</text-h> data systems</li>
+    <li>Build <text-h>scalable</text-h> data pipelines</li>
+    <li>Make <text-h>simple</text-h> data pipelines</li>
+    <li>Create <text-h>reusable</text-h> data collection</li>
+    <li>Ensure data is <text-h>interoperable</text-h> for downstream consumer</li>
+  </div>
+  <div class="col-span-3">
+    <img src="./src/move-data-meme.png" />
+  </div>
+</div>
+
+<style>
+text-h {
+  background-color: yellow;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Simplified Data Maturity Model
+
+<style>
+text-h {
+  background-color: yellow;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
 layout: quote
 ---
 
