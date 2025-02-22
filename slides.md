@@ -248,11 +248,56 @@ text-h {
 
 ---
 transition: fade-out
+---
+
+# Data Science and Data Engineering
+
+<div class="grid grid-cols-7 grid-rows-2 gap-4">
+  <div class="col-span-3 row-span-2">
+    <ul>
+      <li><text-h>Data science</text-h> spends 70-80% of their time the technical aspects of the data science hierarch of needs (the bottom 3 parts)</li>
+      <li><text-h>Data scientists</text-h> tend to lack the skills to build a production-grade data systems causing them to deploy lackluster performing data systems</li>
+      <li><text-h>Data engineer</text-h> enables data scientist to focus on analytics and ML by providing value from data sources using their skills in gathering data, cleaning data, processing data</li>
+    </ul>
+  </div>
+  <div class="col-span-4">
+    <img src="./src/the-data-science-hierarch-of-needs.png"/>
+    Data Science Hierarchy of needs
+  </div>
+  <div class="col-span-4">
+    <img src="./src/data-sources-engineer-science.png"/>
+    Data Engineer's role in the hierarchy
+  </div>
+</div>
+
+<style>
+h2 {
+  background-color: #2B90B6;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+text-h {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+---
+transition: fade-out
 layout: quote
 ---
 
 <div class="scale-98 absolute top-5 left-0">
-<img src="./src/de-lifecycle.png" class="h-lg" />
+<img src="./src/de-lifecycle.png" class="h-lg"/>
 </div>
 
 ---
