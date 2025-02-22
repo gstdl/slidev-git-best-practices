@@ -329,6 +329,12 @@ transition: fade-out
 
 # Simplified Data Maturity Model
 
+```mermaid
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  Note over Alice,John: A typical interaction
+```
+
 <style>
 text-h {
   background-color: yellow;
