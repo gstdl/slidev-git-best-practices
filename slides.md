@@ -83,7 +83,6 @@ transition: fade-out
         git config --global pull.rebase true
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Essential .gitignore</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -109,7 +108,6 @@ transition: fade-out
       <div>📁 <strong>docs/</strong> - Documentation</div>
       <div>📁 <strong>scripts/</strong> - Build and deployment scripts</div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Protection</span></h3>
     <div class="text-sm space-y-1">
       <div>✅ Require pull request reviews</div>
@@ -215,7 +213,6 @@ transition: fade-out
         [optional footer(s)]
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Commit Types</span></h3>
     <div class="text-sm space-y-1">
       <div><strong>feat:</strong> New feature</div>
@@ -243,7 +240,6 @@ transition: fade-out
         Increase timeout from 5s to 30s for large datasets
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bad Examples</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-red-100 p-2 rounded font-mono text-xs">
@@ -288,7 +284,6 @@ transition: fade-out
         git push origin feature/new-dashboard
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Templates</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -324,7 +319,6 @@ transition: fade-out
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: npm test
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Issue Templates</span></h3>
     <div class="text-sm space-y-1">
       <div>🐛 <strong>Bug Report Template</strong></div>
@@ -353,7 +347,7 @@ transition: fade-out
 
 # Azure DevOps Best Practices
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 grid-rows-2 gap-8">
   <div>
     <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Azure Repos Setup</span></h3>
     <div class="text-sm space-y-2">
@@ -366,9 +360,8 @@ transition: fade-out
         git config credential.helper manager-core
       </div>
     </div>
-
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Policies</span></h3>
     <div class="text-sm space-y-1">
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Policies</span></h3>
       <div>✅ Require minimum 2 reviewers</div>
       <div>✅ Check for linked work items</div>
       <div>✅ Require build validation</div>
@@ -398,7 +391,6 @@ transition: fade-out
         &nbsp;&nbsp;displayName: 'Run tests'
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Work Item Integration</span></h3>
     <div class="text-sm space-y-1">
       <div>🔗 Link commits to work items</div>
@@ -438,7 +430,6 @@ transition: fade-out
       <div>✅ <strong>Keep PRs small and focused</strong></div>
       <div>✅ <strong>Include screenshots for UI changes</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Description Template</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -464,7 +455,6 @@ transition: fade-out
       <div>🧪 <strong>Ensure adequate test coverage</strong></div>
       <div>📚 <strong>Validate documentation updates</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Review Comments</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-green-100 p-2 rounded">
@@ -517,7 +507,6 @@ transition: fade-out
         # drop - remove commit
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Hooks</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -545,7 +534,6 @@ transition: fade-out
         git cherry-pick --no-commit &lt;hash&gt;
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bisect for Debugging</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -592,7 +580,6 @@ transition: fade-out
       <div>🔍 <strong>Scan for secrets in commits</strong></div>
       <div>📝 <strong>Sign commits with GPG</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Secret Scanning</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -617,7 +604,6 @@ transition: fade-out
       <div>🔄 <strong>Regular access reviews</strong></div>
       <div>📈 <strong>Monitor repository metrics</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">GitHub Security Features</span></h3>
     <div class="text-sm space-y-2">
       <div>🔍 <strong>Dependabot alerts</strong></div>
@@ -626,7 +612,6 @@ transition: fade-out
       <div>📝 <strong>Code scanning with CodeQL</strong></div>
       <div>🎯 <strong>Dependency review</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Security</span></h3>
     <div class="text-sm space-y-2">
       <div>🔑 <strong>Azure AD integration</strong></div>
@@ -666,7 +651,6 @@ transition: fade-out
       <div>🟡 <strong>MINOR:</strong> New features (backward compatible)</div>
       <div>🟢 <strong>PATCH:</strong> Bug fixes</div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Tags</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -693,7 +677,6 @@ transition: fade-out
         &nbsp;&nbsp;dist/*
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Releases</span></h3>
     <div class="text-sm space-y-2">
       <div>🚀 <strong>Release pipelines</strong></div>
@@ -702,7 +685,6 @@ transition: fade-out
       <div>📋 <strong>Release notes automation</strong></div>
       <div>🔄 <strong>Rollback strategies</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Changelog Automation</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -747,7 +729,6 @@ transition: fade-out
         git commit -m "resolve merge conflicts"
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Undo Changes</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -775,7 +756,6 @@ transition: fade-out
         git commit -m "track large files with LFS"
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Repository Cleanup</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -820,7 +800,6 @@ transition: fade-out
       <div>📈 <strong>Monitor repository metrics</strong></div>
       <div>🔍 <strong>Analyze repository with git-sizer</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Configuration</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -845,7 +824,6 @@ transition: fade-out
       <div>🔄 <strong>Parallel job execution</strong></div>
       <div>📊 <strong>Monitor build performance</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">CI/CD Optimization</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
@@ -860,7 +838,6 @@ transition: fade-out
         &nbsp;&nbsp;&nbsp;&nbsp;key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       </div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Monitoring</span></h3>
     <div class="text-sm space-y-2">
       <div>📈 <strong>Track repository size growth</strong></div>
@@ -899,7 +876,6 @@ transition: fade-out
       <div>📊 <strong>Regular retrospectives</strong></div>
       <div>🔄 <strong>Continuous improvement</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Communication</span></h3>
     <div class="text-sm space-y-2">
       <div>💬 <strong>Clear PR descriptions</strong></div>
@@ -920,7 +896,6 @@ transition: fade-out
       <div>📝 <strong>Code review training</strong></div>
       <div>🎯 <strong>Practice repositories</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Knowledge Sharing</span></h3>
     <div class="text-sm space-y-2">
       <div>📚 <strong>Maintain team wiki</strong></div>
@@ -929,7 +904,6 @@ transition: fade-out
       <div>🏆 <strong>Celebrate good practices</strong></div>
       <div>🔍 <strong>Code review feedback</strong></div>
     </div>
-
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Quality Gates</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded">
