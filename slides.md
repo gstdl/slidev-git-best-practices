@@ -479,6 +479,12 @@ transition: fade-out
   </div>
 </div>
 
+```mermaid
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  Note over Alice,John: A typical interaction
+```
+
 <style>
 .text-highlight {
   background-color: #2B90B6;
