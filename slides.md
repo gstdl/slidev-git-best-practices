@@ -5,8 +5,8 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
-title: "Data Engineering History, People & Lifecycle"
-info: "Data Engineering History, People & Lifecycle"
+title: "Git Best Practices"
+info: "Git best practices for GitHub and Azure DevOps"
 # apply unocss classes to the current slide
 class: text-left
 # https://sli.dev/features/drawing
@@ -18,31 +18,29 @@ transition: fade-out
 mdc: true
 ---
 
-# Data Engineering 
-## The History, The People and The Lifecycle
+# Git Best Practices
+## For GitHub and Azure DevOps
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Comprehensive guide to Git best practices for modern development workflows
 -->
 
 ---
 transition: fade-out
 ---
 
-# Data Engineering Defined
+# Why Git Best Practices Matter
 
 <div class="absolute top-1/2 transform -translate-y-1/2">
 
-- Data engineering is the development, implementation, and maintenance of systems and processes that <text-h>take in raw data and produce high-quality, consistent information</text-h> that supports downstream use cases, such as analysis and machine learning. 
-- Data engineering is the <text-h>intersection of security, data management, DataOps, data architecture, orchestration, and software engineering</text-h>. 
-- A data engineer manages the data engineering lifecycle, beginning with getting data from source systems and ending with serving data for use cases, such as analysis or machine learning.
+- <span class="text-highlight">Maintain clean and readable project history</span> for better collaboration
+- <span class="text-highlight">Enable efficient code reviews</span> and faster debugging
+- <span class="text-highlight">Reduce merge conflicts</span> and integration issues
+- <span class="text-highlight">Facilitate easier rollbacks</span> and hotfix deployments
+- <span class="text-highlight">Support automated CI/CD pipelines</span> and deployment strategies
+- <span class="text-highlight">Improve team productivity</span> and code quality
 
 </div>
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
 
 <style>
 h1 {
@@ -53,100 +51,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-text-h {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: fade-out
----
-
-# Evolution of the Data Engineer
-## 1980 to 2000: from data warehousing to the web
-
-- Bill Inmon coined the term <text-h>data warehouse</text-h> in 1989
-- IBM developed <text-h>SQL</text-h>
-- Ralph Kimball and Bill Inmon developed their data modeling techniques and approaches
-- Around the mid-1990s, AOL, Yahoo, and Amazon started emerging with the dot-com bubble
-
-<div class="grid grid-cols-2 grid-rows-2">
-  <div class="flex justify-center">
-    <img src=./src/Bill_Inmon.jpg>
-  </div>
-  <div class="flex justify-center">
-    <img src=./src/ralph-kimball.jpg>
-  </div>
-  <div class="flex justify-center">Bill Inmon</div>
-<div class="flex justify-center">Ralph Kimball</div>
-</div>
-
-<style>
-h2 {
-  background-color: #2B90B6;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-text-h {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
-layout: two-cols-header
----
-
-# Evolution of the Data Engineer
-## Early 2000s: start of big data era
-
-::left::
-
-- Bill Inmon published his book: Building the Data Warehouse
-- Ralph Kimball published his book: The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling
-- <text-h>Hardware became cheaper and faster</text-h>
-- Google published a paper on <text-h>Google File System</text-h> in 2003
-- In 2004, Google published a paper about <text-h>MapReduce</text-h>
-- Yahoo developed Apache Hadoop in 2006
-- Amazon created EC2, S3, DynamoDB, etc. 
-
-::right::
-
-<div class="absolute top-1/2 transform -translate-y-1/2 scale-62">
-<img src="./src/moores-law.png"/>
-<p></p>
-<img src="./src/historical-cost-of-computer-memory-and-storage.png"/>
-</div>
-
-<style>
-h2 {
-  background-color: #2B90B6;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-text-h {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
   font-weight: bold;
@@ -161,39 +66,62 @@ text-h {
 transition: fade-out
 ---
 
-# Evolution of the Data Engineer
-## Early 2000s-2010s: The Hadoop Ecosystem & Big data
+# Repository Setup & Configuration
 
-<div class="grid grid-cols-3 gap-4">
-  <div class="content-center">
-    <ul>
-      <li><text-h>Hadoop ecosystem</text-h> matured</li>
-      <li>Focus was on optimizing the utilization and cost of the hadoop ecosystem</li>
-      <li>The term <text-h>big data</text-h> gained popularity</li>
-    </ul>
-  </div>
+<div class="grid grid-cols-2 gap-8">
   <div>
-    <img src="./src/hadoop-timeline.webp"/>
-    <p/>
-    <img src="./src/hadoop-cluster-architecture.webp"/>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Initial Setup</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono">
+        git config --global user.name "Your Name"<br>
+        git config --global user.email "your@email.com"
+      </div>
+      <div class="bg-gray-100 p-2 rounded font-mono">
+        git config --global init.defaultBranch main
+      </div>
+      <div class="bg-gray-100 p-2 rounded font-mono">
+        git config --global pull.rebase true
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Essential .gitignore</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Dependencies<br>
+        node_modules/<br>
+        vendor/<br><br>
+        # Build outputs<br>
+        dist/<br>
+        build/<br><br>
+        # Environment files<br>
+        .env<br>
+        .env.local
+      </div>
+    </div>
   </div>
+  
   <div>
-    <img src="./src/map-reduce.webp"/>
-    <p/>
-    <img src="./src/big-data-google-trends.png"/>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Repository Structure</span></h3>
+    <div class="text-sm space-y-1">
+      <div>📁 <strong>README.md</strong> - Project overview and setup</div>
+      <div>📁 <strong>CONTRIBUTING.md</strong> - Contribution guidelines</div>
+      <div>📁 <strong>.github/</strong> - GitHub templates and workflows</div>
+      <div>📁 <strong>docs/</strong> - Documentation</div>
+      <div>📁 <strong>scripts/</strong> - Build and deployment scripts</div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Protection</span></h3>
+    <div class="text-sm space-y-1">
+      <div>✅ Require pull request reviews</div>
+      <div>✅ Require status checks to pass</div>
+      <div>✅ Restrict pushes to main branch</div>
+      <div>✅ Include administrators in restrictions</div>
+    </div>
   </div>
 </div>
 
 <style>
-h2 {
-  background-color: #2B90B6;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-text-h {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
   font-weight: bold;
@@ -208,34 +136,128 @@ text-h {
 transition: fade-out
 ---
 
-# Evolution of the Data Engineer
-## 2020s: engineering for data engineering
+# Branching Strategies
 
-<div class="grid grid-cols-3 gap-4">
-  <div class="col-span-2 content-center">
-    <ul>
-      <li>Era of the <text-h>modern data stack</text-h></li>
-      <li>Not only does the data engineer work on building data pipelines, they also started focusing on <text-h>security, data governance, data quality, observability, operations, data management, orchestration, and data architecture</text-h></li>
-      <li>There is a SaaS for every data tools</li>
-    </ul>
+<div class="grid grid-cols-3 gap-6">
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="font-bold text-blue-600 mb-3">🌊 Git Flow</h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Production releases</div>
+      <div><strong>develop:</strong> Integration branch</div>
+      <div><strong>feature/*:</strong> New features</div>
+      <div><strong>release/*:</strong> Release preparation</div>
+      <div><strong>hotfix/*:</strong> Critical fixes</div>
+    </div>
+    <div class="mt-3 text-xs bg-blue-100 p-2 rounded">
+      <strong>Best for:</strong> Complex projects with scheduled releases
+    </div>
   </div>
+
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="font-bold text-green-600 mb-3">🚀 GitHub Flow</h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Always deployable</div>
+      <div><strong>feature/*:</strong> All development</div>
+      <div><strong>Process:</strong></div>
+      <div class="ml-2">1. Create branch from main</div>
+      <div class="ml-2">2. Develop & commit</div>
+      <div class="ml-2">3. Open pull request</div>
+      <div class="ml-2">4. Review & merge</div>
+    </div>
+    <div class="mt-3 text-xs bg-green-100 p-2 rounded">
+      <strong>Best for:</strong> Continuous deployment, web apps
+    </div>
+  </div>
+
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-bold text-purple-600 mb-3">🔄 GitLab Flow</h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Development</div>
+      <div><strong>production:</strong> Live environment</div>
+      <div><strong>staging:</strong> Testing environment</div>
+      <div><strong>feature/*:</strong> Feature development</div>
+    </div>
+    <div class="mt-3 text-xs bg-purple-100 p-2 rounded">
+      <strong>Best for:</strong> Multiple environments, staged deployments
+    </div>
+  </div>
+</div>
+
+<div class="mt-6 bg-yellow-50 p-4 rounded-lg">
+  <h3 class="font-bold text-yellow-600 mb-2">💡 Branch Naming Conventions</h3>
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div>
+      <div class="font-mono bg-gray-100 p-1 rounded">feature/user-authentication</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">bugfix/login-validation-error</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">hotfix/security-patch-2024</div>
+    </div>
+    <div>
+      <div class="font-mono bg-gray-100 p-1 rounded">release/v2.1.0</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">chore/update-dependencies</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">docs/api-documentation</div>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade-out
+---
+
+# Commit Message Best Practices
+
+<div class="grid grid-cols-2 gap-8">
   <div>
-    <img src="./src/2020-data-landscape.png"/>
-    <p/>
-    <img src="./src/new-tech-meme.webp"/>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Conventional Commits</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        &lt;type&gt;[optional scope]: &lt;description&gt;<br><br>
+        [optional body]<br><br>
+        [optional footer(s)]
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Commit Types</span></h3>
+    <div class="text-sm space-y-1">
+      <div><strong>feat:</strong> New feature</div>
+      <div><strong>fix:</strong> Bug fix</div>
+      <div><strong>docs:</strong> Documentation changes</div>
+      <div><strong>style:</strong> Code formatting</div>
+      <div><strong>refactor:</strong> Code restructuring</div>
+      <div><strong>test:</strong> Adding tests</div>
+      <div><strong>chore:</strong> Maintenance tasks</div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Good Examples</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-green-100 p-2 rounded font-mono text-xs">
+        feat(auth): add OAuth 2.0 integration<br><br>
+        - Implement Google OAuth provider<br>
+        - Add user session management<br>
+        - Update login UI components<br><br>
+        Closes #123
+      </div>
+      <div class="bg-green-100 p-2 rounded font-mono text-xs">
+        fix(api): resolve timeout in user endpoint<br><br>
+        Increase timeout from 5s to 30s for large datasets
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bad Examples</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-red-100 p-2 rounded font-mono text-xs">
+        ❌ update stuff<br>
+        ❌ fix bug<br>
+        ❌ WIP<br>
+        ❌ final version
+      </div>
+    </div>
   </div>
 </div>
 
 <style>
-h2 {
-  background-color: #2B90B6;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-text-h {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
   font-weight: bold;
@@ -250,88 +272,72 @@ text-h {
 transition: fade-out
 ---
 
-# Data Science and Data Engineering
+# GitHub Best Practices
 
-<div class="grid grid-cols-7 grid-rows-2 gap-4">
-  <div class="col-span-3 row-span-2">
-    <ul>
-      <li><text-h>Data science</text-h> spends 70-80% of their time the technical aspects of the data science hierarch of needs (the bottom 3 parts)</li>
-      <li><text-h>Data scientists</text-h> tend to lack the skills to build a production-grade data systems causing them to deploy lackluster performing data systems</li>
-      <li><text-h>Data engineer</text-h> enables data scientist to focus on analytics and ML by providing value from data sources using their skills in gathering data, cleaning data, processing data</li>
-    </ul>
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Pull Request Workflow</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Create feature branch<br>
+        git checkout -b feature/new-dashboard<br><br>
+        # Make changes and commit<br>
+        git add .<br>
+        git commit -m "feat: add user dashboard"<br><br>
+        # Push and create PR<br>
+        git push origin feature/new-dashboard
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Templates</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        ## Description<br>
+        Brief description of changes<br><br>
+        ## Type of Change<br>
+        - [ ] Bug fix<br>
+        - [ ] New feature<br>
+        - [ ] Breaking change<br><br>
+        ## Testing<br>
+        - [ ] Unit tests pass<br>
+        - [ ] Integration tests pass
+      </div>
+    </div>
   </div>
-  <div class="col-span-4">
-    <img src="./src/the-data-science-hierarch-of-needs.png"/>
-    Data Science Hierarchy of needs
-  </div>
-  <div class="col-span-4">
-    <img src="./src/data-sources-engineer-science.png"/>
-    Data Engineer's role in the hierarchy
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitHub Actions Example</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        name: CI/CD Pipeline<br><br>
+        on:<br>
+        &nbsp;&nbsp;pull_request:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;branches: [ main ]<br>
+        &nbsp;&nbsp;push:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;branches: [ main ]<br><br>
+        jobs:<br>
+        &nbsp;&nbsp;test:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;steps:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- uses: actions/checkout@v3<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- name: Run tests<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: npm test
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Issue Templates</span></h3>
+    <div class="text-sm space-y-1">
+      <div>🐛 <strong>Bug Report Template</strong></div>
+      <div>✨ <strong>Feature Request Template</strong></div>
+      <div>❓ <strong>Question Template</strong></div>
+      <div>🔧 <strong>Task Template</strong></div>
+    </div>
   </div>
 </div>
 
 <style>
-h2 {
+.text-highlight {
   background-color: #2B90B6;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-text-h {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-
----
-transition: fade-out
----
-
-# Data engineering purpose
-
-<div class="grid grid-cols-10 gap-2">
-  <div class="col-span-6 content-center">
-    <li>Minimize data <text-h>cost</text-h></li>
-    <li>Develop <text-h>agile</text-h> data systems</li>
-    <li>Build <text-h>scalable</text-h> data pipelines</li>
-    <li>Make <text-h>simple</text-h> data pipelines</li>
-    <li>Create <text-h>reusable</text-h> data collection</li>
-    <li>Ensure data is <text-h>interoperable</text-h> for downstream consumer</li>
-  </div>
-  <div class="col-span-3">
-    <img src="./src/move-data-meme.png" />
-  </div>
-</div>
-
-<style>
-text-h {
-  background-color: yellow;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Simplified Data Maturity Model
-
-<style>
-text-h {
-  background-color: yellow;
   background-size: 100%;
   font-weight: bold;
   -webkit-background-clip: text;
@@ -343,52 +349,71 @@ text-h {
 
 ---
 transition: fade-out
-layout: quote
 ---
 
-<div class="scale-98 absolute top-5 left-0">
-<img src="./src/de-lifecycle.png" class="h-lg"/>
+# Azure DevOps Best Practices
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Azure Repos Setup</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Clone Azure DevOps repo<br>
+        git clone https://dev.azure.com/org/project/_git/repo<br><br>
+        # Set up remote tracking<br>
+        git remote add origin https://dev.azure.com/org/project/_git/repo<br><br>
+        # Configure for Azure DevOps<br>
+        git config credential.helper manager-core
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Policies</span></h3>
+    <div class="text-sm space-y-1">
+      <div>✅ Require minimum 2 reviewers</div>
+      <div>✅ Check for linked work items</div>
+      <div>✅ Require build validation</div>
+      <div>✅ Auto-complete after requirements met</div>
+      <div>✅ Squash merge for clean history</div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Azure Pipelines YAML</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        trigger:<br>
+        - main<br>
+        - develop<br><br>
+        pr:<br>
+        - main<br><br>
+        pool:<br>
+        &nbsp;&nbsp;vmImage: 'ubuntu-latest'<br><br>
+        steps:<br>
+        - task: NodeTool@0<br>
+        &nbsp;&nbsp;inputs:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;versionSpec: '18.x'<br><br>
+        - script: npm ci<br>
+        &nbsp;&nbsp;displayName: 'Install dependencies'<br><br>
+        - script: npm test<br>
+        &nbsp;&nbsp;displayName: 'Run tests'
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Work Item Integration</span></h3>
+    <div class="text-sm space-y-1">
+      <div>🔗 Link commits to work items</div>
+      <div>📋 Reference work items in PR descriptions</div>
+      <div>🎯 Use AB# prefix for automatic linking</div>
+      <div>✅ Close work items via commits</div>
+    </div>
+  </div>
 </div>
-
----
-transition: fade-out
-layout: two-cols-header
----
-
-# Data Engineering Lifecycle: <h1-bold>Generation</h1-bold>
-
-::left::
-
-<div class="scale-1/1">
-Things to consider from the data source:
-
-1. Data generation rate (How many events per second? How many gigabytes per hour?)
-2. Data persistence (Is it stored permanently or temporarily?)
-3. Data consistency
-4. Data errors
-5. Data duplication/deduplication
-6. Data schema
-7. Schema update frequency
-8. Data timeliness
-9. Data upstream
-10. Data quality checking
-11. Personal Identifiable Information
-</div>
-
-::right::
-
-<div class="absolute inset-y-0 right-0 scale-2/3">
-<img src="./src/application-database.png"/>
-Application database
-<img src="./src/message-queue.png"/>
-Message queue
-</div>
-
 
 <style>
-h1-bold {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
+  font-weight: bold;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -398,37 +423,67 @@ h1-bold {
 
 ---
 transition: fade-out
-layout: two-cols-header
 ---
 
-# Data Engineering Lifecycle: <h1-bold>Storage</h1-bold>
+# Code Review Best Practices
 
-::left::
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Before Submitting PR</span></h3>
+    <div class="text-sm space-y-2">
+      <div>✅ <strong>Self-review your code</strong></div>
+      <div>✅ <strong>Run tests locally</strong></div>
+      <div>✅ <strong>Update documentation</strong></div>
+      <div>✅ <strong>Add meaningful commit messages</strong></div>
+      <div>✅ <strong>Keep PRs small and focused</strong></div>
+      <div>✅ <strong>Include screenshots for UI changes</strong></div>
+    </div>
 
-<div class="absolute inset-y-0 -left-120 -top-30 scale-1/4">
-<img src="./src/byte-byte-go-cloud-database-cheat-sheet.jpg"/>
-Cloud database cheatsheet
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Description Template</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        ## What changed?<br>
+        Brief summary of the changes<br><br>
+        ## Why?<br>
+        Explain the motivation<br><br>
+        ## How to test?<br>
+        Step-by-step testing instructions<br><br>
+        ## Screenshots<br>
+        Before/after images if applicable
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">During Code Review</span></h3>
+    <div class="text-sm space-y-2">
+      <div>👀 <strong>Review logic and architecture</strong></div>
+      <div>🔍 <strong>Check for security vulnerabilities</strong></div>
+      <div>📝 <strong>Verify code readability</strong></div>
+      <div>⚡ <strong>Assess performance impact</strong></div>
+      <div>🧪 <strong>Ensure adequate test coverage</strong></div>
+      <div>📚 <strong>Validate documentation updates</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Review Comments</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-green-100 p-2 rounded">
+        <div class="font-bold text-green-600">✅ Good:</div>
+        <div>"Consider using a Map here for O(1) lookup instead of Array.find() for better performance"</div>
+      </div>
+      <div class="bg-red-100 p-2 rounded">
+        <div class="font-bold text-red-600">❌ Bad:</div>
+        <div>"This is wrong"</div>
+      </div>
+    </div>
+  </div>
 </div>
-
-::right::
-
-<div class="absolute top-1/2 transform -translate-y-1/2">
-Things to consider for data storage:
-
-1. Write & read speed
-2. Storage strength & weaknesses
-3. Scalability
-4. Metadata generation & management
-5. Data retrievability (how to query the data)
-6. Data security
-7. Regulatory compliance
-</div>
-
 
 <style>
-h1-bold {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
+  font-weight: bold;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -436,27 +491,77 @@ h1-bold {
 }
 </style>
 
-
 ---
 transition: fade-out
 ---
 
-# Data Engineering Lifecycle: <h1-bold>Storage (Blob)</h1-bold>
+# Advanced Git Techniques
 
-<div class="absolute -top-35 -left-100 scale-7/20">
-<img src="./src/gcs-storage-class.jpg"/>
-Google Cloud Storage Classes
-</div>
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Interactive Rebase</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Clean up commit history<br>
+        git rebase -i HEAD~3<br><br>
+        # Options:<br>
+        # pick - keep commit<br>
+        # squash - combine with previous<br>
+        # edit - modify commit<br>
+        # drop - remove commit
+      </div>
+    </div>
 
-<div class="absolute -bottom-35 -right-85 scale-7/20">
-<img src="./src/aws-s3-storage-class.jpeg"/>
-Amazon Web Services  S3 Storage Class
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Hooks</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # .git/hooks/pre-commit<br>
+        #!/bin/sh<br>
+        npm run lint<br>
+        npm run test<br><br>
+        # .git/hooks/commit-msg<br>
+        #!/bin/sh<br>
+        # Validate commit message format<br>
+        npx commitlint --edit $1
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Cherry-picking</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Apply specific commit to current branch<br>
+        git cherry-pick &lt;commit-hash&gt;<br><br>
+        # Apply multiple commits<br>
+        git cherry-pick A..B<br><br>
+        # Cherry-pick without committing<br>
+        git cherry-pick --no-commit &lt;hash&gt;
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bisect for Debugging</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Start bisect session<br>
+        git bisect start<br>
+        git bisect bad HEAD<br>
+        git bisect good &lt;known-good-commit&gt;<br><br>
+        # Git will checkout middle commit<br>
+        # Test and mark as good/bad<br>
+        git bisect good  # or git bisect bad<br><br>
+        # Finish when bug is found<br>
+        git bisect reset
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
-h1-bold {
+.text-highlight {
   background-color: #2B90B6;
   background-size: 100%;
+  font-weight: bold;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -466,14 +571,422 @@ h1-bold {
 
 ---
 transition: fade-out
-layout: two-cols-header
 ---
 
-# Data Engineering Lifecycle: <h1-bold>Ingestion</h1-bold>
+# Security & Compliance
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Secure Practices</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🔐 <strong>Never commit secrets</strong></div>
+      <div>🎯 <strong>Use .gitignore for sensitive files</strong></div>
+      <div>🔑 <strong>Use SSH keys or Personal Access Tokens</strong></div>
+      <div>🛡️ <strong>Enable 2FA on all accounts</strong></div>
+      <div>🔍 <strong>Scan for secrets in commits</strong></div>
+      <div>📝 <strong>Sign commits with GPG</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Secret Scanning</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Install git-secrets<br>
+        brew install git-secrets<br><br>
+        # Set up for repository<br>
+        git secrets --install<br>
+        git secrets --register-aws<br><br>
+        # Scan commits<br>
+        git secrets --scan
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Compliance & Audit</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📊 <strong>Enable audit logging</strong></div>
+      <div>👥 <strong>Track contributor activity</strong></div>
+      <div>🔒 <strong>Enforce branch protection rules</strong></div>
+      <div>📋 <strong>Maintain compliance documentation</strong></div>
+      <div>🔄 <strong>Regular access reviews</strong></div>
+      <div>📈 <strong>Monitor repository metrics</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">GitHub Security Features</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🔍 <strong>Dependabot alerts</strong></div>
+      <div>🛡️ <strong>Security advisories</strong></div>
+      <div>🔐 <strong>Secret scanning</strong></div>
+      <div>📝 <strong>Code scanning with CodeQL</strong></div>
+      <div>🎯 <strong>Dependency review</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Security</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🔑 <strong>Azure AD integration</strong></div>
+      <div>🛡️ <strong>Conditional access policies</strong></div>
+      <div>📊 <strong>Audit trail and reporting</strong></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 transition: fade-out
-layout: two-cols-header
 ---
 
-# Data Engineering Lifecycle: <h1-bold>Transformation</h1-bold>
+# Release Management
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Semantic Versioning</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono">
+        <div class="text-center text-lg">MAJOR.MINOR.PATCH</div>
+        <div class="text-center text-lg">2.1.3</div>
+      </div>
+      <div>🔴 <strong>MAJOR:</strong> Breaking changes</div>
+      <div>🟡 <strong>MINOR:</strong> New features (backward compatible)</div>
+      <div>🟢 <strong>PATCH:</strong> Bug fixes</div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Tags</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Create annotated tag<br>
+        git tag -a v2.1.0 -m "Release version 2.1.0"<br><br>
+        # Push tags to remote<br>
+        git push origin --tags<br><br>
+        # List tags<br>
+        git tag -l
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitHub Releases</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Using GitHub CLI<br>
+        gh release create v2.1.0 \<br>
+        &nbsp;&nbsp;--title "Version 2.1.0" \<br>
+        &nbsp;&nbsp;--notes "## What's New<br>
+        &nbsp;&nbsp;- Feature A<br>
+        &nbsp;&nbsp;- Bug fix B" \<br>
+        &nbsp;&nbsp;dist/*
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Releases</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🚀 <strong>Release pipelines</strong></div>
+      <div>🎯 <strong>Multi-stage deployments</strong></div>
+      <div>✅ <strong>Approval gates</strong></div>
+      <div>📋 <strong>Release notes automation</strong></div>
+      <div>🔄 <strong>Rollback strategies</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Changelog Automation</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Generate changelog<br>
+        npx conventional-changelog-cli -p angular -i CHANGELOG.md -s<br><br>
+        # With release automation<br>
+        npx semantic-release
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Common Git Problems & Solutions
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Merge Conflicts</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # When merge conflict occurs<br>
+        git status  # See conflicted files<br><br>
+        # Edit files to resolve conflicts<br>
+        # Look for &lt;&lt;&lt;&lt;&lt;&lt;&lt; markers<br><br>
+        # After resolving<br>
+        git add .<br>
+        git commit -m "resolve merge conflicts"
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Undo Changes</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Undo last commit (keep changes)<br>
+        git reset --soft HEAD~1<br><br>
+        # Undo last commit (discard changes)<br>
+        git reset --hard HEAD~1<br><br>
+        # Undo specific file<br>
+        git checkout -- filename.js
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Large File Issues</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Install Git LFS<br>
+        git lfs install<br><br>
+        # Track large files<br>
+        git lfs track "*.psd"<br>
+        git lfs track "*.zip"<br><br>
+        # Commit .gitattributes<br>
+        git add .gitattributes<br>
+        git commit -m "track large files with LFS"
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Repository Cleanup</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Remove file from history<br>
+        git filter-branch --force --index-filter \<br>
+        'git rm --cached --ignore-unmatch secrets.env' \<br>
+        --prune-empty --tag-name-filter cat -- --all<br><br>
+        # Alternative with BFG<br>
+        java -jar bfg.jar --delete-files secrets.env<br>
+        git reflog expire --expire=now --all<br>
+        git gc --prune=now --aggressive
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Performance & Optimization
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Repository Performance</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📦 <strong>Keep repository size manageable</strong></div>
+      <div>🗂️ <strong>Use Git LFS for large files</strong></div>
+      <div>🧹 <strong>Regular garbage collection</strong></div>
+      <div>📈 <strong>Monitor repository metrics</strong></div>
+      <div>🔍 <strong>Analyze repository with git-sizer</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Configuration</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Optimize for performance<br>
+        git config core.preloadindex true<br>
+        git config core.fscache true<br>
+        git config gc.auto 256<br><br>
+        # Enable parallel processing<br>
+        git config pack.threads 0<br><br>
+        # Use SSH multiplexing<br>
+        git config core.sshCommand "ssh -o ControlMaster=auto -o ControlPersist=600s"
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Workflow Optimization</span></h3>
+    <div class="text-sm space-y-2">
+      <div>⚡ <strong>Use shallow clones for CI</strong></div>
+      <div>🎯 <strong>Optimize pipeline triggers</strong></div>
+      <div>📦 <strong>Cache dependencies</strong></div>
+      <div>🔄 <strong>Parallel job execution</strong></div>
+      <div>📊 <strong>Monitor build performance</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">CI/CD Optimization</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # GitHub Actions optimization<br>
+        - uses: actions/checkout@v3<br>
+        &nbsp;&nbsp;with:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;fetch-depth: 1  # Shallow clone<br><br>
+        # Cache node modules<br>
+        - uses: actions/cache@v3<br>
+        &nbsp;&nbsp;with:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;path: ~/.npm<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      </div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Monitoring</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📈 <strong>Track repository size growth</strong></div>
+      <div>⏱️ <strong>Monitor clone/fetch times</strong></div>
+      <div>🔍 <strong>Analyze commit patterns</strong></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Team Collaboration Best Practices
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Team Workflows</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📋 <strong>Establish clear Git workflows</strong></div>
+      <div>📝 <strong>Document branching strategy</strong></div>
+      <div>👥 <strong>Define code review process</strong></div>
+      <div>🎯 <strong>Set merge/PR requirements</strong></div>
+      <div>📊 <strong>Regular retrospectives</strong></div>
+      <div>🔄 <strong>Continuous improvement</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Communication</span></h3>
+    <div class="text-sm space-y-2">
+      <div>💬 <strong>Clear PR descriptions</strong></div>
+      <div>🏷️ <strong>Meaningful commit messages</strong></div>
+      <div>📋 <strong>Link to issue tracking</strong></div>
+      <div>📚 <strong>Update documentation</strong></div>
+      <div>🔔 <strong>Timely PR reviews</strong></div>
+      <div>❓ <strong>Ask questions when unclear</strong></div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Onboarding New Developers</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📖 <strong>Git workflow documentation</strong></div>
+      <div>🛠️ <strong>Setup scripts and guides</strong></div>
+      <div>👨‍🏫 <strong>Pair programming sessions</strong></div>
+      <div>📝 <strong>Code review training</strong></div>
+      <div>🎯 <strong>Practice repositories</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Knowledge Sharing</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📚 <strong>Maintain team wiki</strong></div>
+      <div>🎤 <strong>Regular tech talks</strong></div>
+      <div>💡 <strong>Share Git tips & tricks</strong></div>
+      <div>🏆 <strong>Celebrate good practices</strong></div>
+      <div>🔍 <strong>Code review feedback</strong></div>
+    </div>
+
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Quality Gates</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded">
+        <div>✅ All tests pass</div>
+        <div>✅ Code coverage threshold met</div>
+        <div>✅ Security scans pass</div>
+        <div>✅ Performance benchmarks</div>
+        <div>✅ Documentation updated</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+layout: center
+class: text-center
+---
+
+# Thank You!
+
+## Questions & Discussion
+
+<div class="mt-8">
+<h3 class="text-lg font-bold"><span class="text-highlight">Key Takeaways</span></h3>
+<ul class="mt-4 text-sm list-none">
+  <li>🌊 Choose the right branching strategy for your team and project</li>
+  <li>📝 Write clear, conventional commit messages for better history</li>
+  <li>🔍 Implement thorough code review processes</li>
+  <li>🛡️ Prioritize security and compliance in your Git workflows</li>
+  <li>⚡ Optimize performance for large repositories and teams</li>
+  <li>👥 Foster collaboration through clear documentation and communication</li>
+</ul>
+</div>
+
+<div class="mt-8 text-sm">
+<div class="font-bold">📚 Additional Resources:</div>
+<div>• Pro Git Book (git-scm.com/book)</div>
+<div>• GitHub Docs & Azure DevOps Documentation</div>
+<div>• Conventional Commits (conventionalcommits.org)</div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
