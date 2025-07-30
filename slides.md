@@ -73,38 +73,36 @@ transition: fade-out
     <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Initial Setup</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono">
-        git config --global user.name "Your Name"<br>
-        git config --global user.email "your@email.com"
-      </div>
-      <div class="bg-gray-100 p-2 rounded font-mono">
-        git config --global init.defaultBranch main
-      </div>
-      <div class="bg-gray-100 p-2 rounded font-mono">
-        git config --global pull.rebase true
+        git config user.name "Your Name"<br>
+        git config user.email "your@email.com"
       </div>
     </div>
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Essential .gitignore</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Dependencies<br>
-        node_modules/<br>
-        vendor/<br><br>
-        # Build outputs<br>
-        dist/<br>
-        build/<br><br>
-        # Environment files<br>
-        .env<br>
-        .env.local
-      </div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+          # Common files to ignore<br>
+          node_modules/<br>
+          .env<br>
+          dist/<br>
+          *.log<br>
+          .DS_Store<br>
+          .venv/
+        </div>
+        <h4 class="text-sm font-bold mt-3 mb-2">Useful Resources:</h4>
+        <ul class="text-xs space-y-1">
+          <li><a href="https://github.com/github/gitignore/blob/main/Python.gitignore" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Python .gitignore template</a></li>
+          <li><a href="https://www.toptal.com/developers/gitignore" target="_blank" class="text-blue-600 hover:text-blue-800 underline">gitignore.io generator</a></li>
+        </ul>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Repository Structure</span></h3>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Sample Repository Structure</span></h3>
     <div class="text-sm space-y-1">
-      <div>📁 <strong>README.md</strong> - Project overview and setup</div>
-      <div>📁 <strong>CONTRIBUTING.md</strong> - Contribution guidelines</div>
+      <div>📄 <strong>README.md</strong> - Project overview and setup</div>
+      <div>📄 <strong>CONTRIBUTING.md</strong> - Contribution guidelines</div>
       <div>📁 <strong>.github/</strong> - GitHub templates and workflows</div>
+      <div>📁 <strong>.git/</strong> - Git configuration and hooks</div>
       <div>📁 <strong>docs/</strong> - Documentation</div>
       <div>📁 <strong>scripts/</strong> - Build and deployment scripts</div>
     </div>
