@@ -44,7 +44,7 @@ transition: fade-out
     <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Key Concepts</span></h3>
     <div class="text-sm space-y-2">
       <div>📦 <strong>Repository:</strong> Project directory with Git tracking</div>
-      <div>📸 <strong>Commit:</strong> Snapshot of your code at a point in time</div>
+      <div>📸 <strong>commit id:</strong> Snapshot of your code at a point in time</div>
       <div>🌿 <strong>Branch:</strong> Independent line of development</div>
       <div>🔗 <strong>Merge:</strong> Combining changes from different branches</div>
       <div>🏷️ <strong>Tag:</strong> Marking specific commits (releases)</div>
@@ -325,9 +325,9 @@ layout: none
         <div>• Code formatting (Prettier, Black)</div>
         <div>• Linting (ESLint, pylint)</div>
         <div>• Simple security checks</div>
-        <div>• Commit message validation</div>
-        <div>• File size restrictions</div>
-        <div>• Merge conflict detection</div>
+        <!-- <div>• Commit message validation</div> -->
+        <!-- <div>• File size restrictions</div> -->
+        <!-- <div>• Merge conflict detection</div> -->
       </div>
     </div>
     <div class="bg-green-50 p-4 rounded-lg">
@@ -337,6 +337,7 @@ layout: none
         <div>• Build and compilation</div>
         <div>• Security scanning</div>
         <div>• Performance testing</div>
+        <div>• Automated review</div>
         <div>• Deployment processes</div>
         <div>• Integration testing</div>
       </div>
@@ -349,7 +350,7 @@ layout: none
       <h4 class="font-bold text-yellow-600 mb-3">🎯 Recommended Strategy</h4>
       <div class="text-sm space-y-3">
         <div>
-          <strong>Pre-commit:</strong> Fast quality checks
+          <strong>Pre-commit id:</strong> Fast quality checks
           <div class="font-mono text-xs bg-gray-100 p-2 rounded mt-1">
             - Formatting (< 5s)<br>
             - Linting (< 10s)<br>
@@ -357,7 +358,7 @@ layout: none
           </div>
         </div>
         <div>
-          <strong>Post-commit:</strong> Comprehensive validation
+          <strong>Post-commit id:</strong> Comprehensive validation
           <div class="font-mono text-xs bg-gray-100 p-2 rounded mt-1">
             - Full test suite<br>
             - Build verification<br>
@@ -392,6 +393,401 @@ layout: none
 </style>
 
 
+---
+transition: fade-out
+---
+
+# Git Branching Strategies
+
+<div class="grid grid-cols-3 gap-6">
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h3 class="font-bold text-green-600 mb-3">🚀 GitHub Flow</h3>
+    <div class="text-sm space-y-1">
+      <div>• Simple branch-per-feature</div>
+      <div>• Continuous deployment</div>
+      <div>• Fast iterations</div>
+      <div>• Web applications</div>
+    </div>
+    <div class="mt-3 text-xs">
+      <strong>Branches:</strong> main, feature/*
+    </div>
+  </div>
+
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <h3 class="font-bold text-blue-600 mb-3">🌊 Git Flow</h3>
+    <div class="text-sm space-y-1">
+      <div>• Complex workflow with multiple branch types</div>
+      <div>• Scheduled releases</div>
+      <div>• Large teams</div>
+      <div>• Enterprise projects</div>
+    </div>
+    <div class="mt-3 text-xs">
+      <strong>Branches:</strong> main, develop, feature/*, release/*, hotfix/*
+    </div>
+  </div>
+
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-bold text-purple-600 mb-3">🔄 GitLab Flow</h3>
+    <div class="text-sm space-y-1">
+      <div>• Environment-based branches</div>
+      <div>• Staged deployments</div>
+      <div>• Quality gates</div>
+      <div>• Production releases</div>
+    </div>
+    <div class="mt-3 text-xs">
+      <strong>Branches:</strong> main, staging, production, feature/*
+    </div>
+  </div>
+</div>
+
+<div class="mt-8 bg-yellow-50 p-4 rounded-lg">
+  <h3 class="font-bold text-yellow-600 mb-2">💡 Branch Naming Conventions</h3>
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div>
+      <div class="font-mono bg-gray-100 p-1 rounded">feature/user-authentication</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">bugfix/login-validation-error</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">hotfix/security-patch-2024</div>
+    </div>
+    <div>
+      <div class="font-mono bg-gray-100 p-1 rounded">release/v2.1.0</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">chore/update-dependencies</div>
+      <div class="font-mono bg-gray-100 p-1 rounded mt-1">docs/api-documentation</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# GitHub Flow Strategy
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Simple Workflow</span></h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Always deployable production code</div>
+      <div><strong>feature/*:</strong> All development work</div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Process Steps</span></h3>
+    <div class="text-sm space-y-2">
+      <div>1. <strong>Create branch</strong> from main</div>
+      <div>2. <strong>Develop</strong> feature with commits</div>
+      <div>3. <strong>Open pull request</strong> early</div>
+      <div>4. <strong>Discuss & review</strong> code</div>
+      <div>5. <strong>Deploy</strong> from branch for testing</div>
+      <div>6. <strong>Merge</strong> to main after approval</div>
+    </div>
+    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Create feature branch<br>
+        git checkout main<br>
+        git pull origin main<br>
+        git checkout -b feature/new-api<br><br>
+        # Develop and push<br>
+        git add .<br>
+        git commit -m "feat: add new API endpoint"<br>
+        git push origin feature/new-api<br><br>
+        # After PR approval<br>
+        git checkout main<br>
+        git pull origin main<br>
+        git branch -d feature/new-api
+      </div>
+    </div> -->
+  </div>
+  
+  <div>
+    <div class="flex justify-center">
+      <img src="./src/ideal git flow.png" alt="GitHub Flow Diagram" class="max-w-full h-auto rounded-lg shadow-lg" />
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Git Flow Branching Strategy
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Branch Structure</span></h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Production-ready releases only</div>
+      <div><strong>develop:</strong> Integration branch for features</div>
+      <div><strong>feature/*:</strong> Individual feature development</div>
+      <div><strong>release/*:</strong> Release preparation and testing</div>
+      <div><strong>hotfix/*:</strong> Critical production fixes</div>
+    </div>
+    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Process</span></h3>
+    <div class="text-sm space-y-2">
+      <div>1. <strong>Create feature branch</strong> from develop</div>
+      <div>2. <strong>Develop & commit</strong> changes</div>
+      <div>3. <strong>Merge feature</strong> back to develop</div>
+      <div>4. <strong>Create release branch</strong> from develop</div>
+      <div>5. <strong>Test & fix</strong> in release branch</div>
+      <div>6. <strong>Merge to main</strong> and tag release</div>
+      <div>7. <strong>Merge back</strong> to develop</div>
+    </div> -->
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
+      <div class="text-sm space-y-1">
+      <div>✅ Large development teams</div>
+      <div>✅ Scheduled releases</div>
+      <div>✅ Complex feature development</div>
+      <div>✅ Multiple environments</div>
+      <div>✅ Enterprise applications</div>
+      <div>❌ Continuous deployment</div>
+      <div>❌ Simple projects</div>
+    </div>
+  </div>
+  
+  <div>
+    <div class="flex justify-center mb-4">
+      <img src="https://nvie.com/img/git-model@2x.png" alt="Git Flow Diagram" class="w-80 h-auto rounded-lg shadow-lg" />
+        </div>
+  </div>
+</div>
+
+<!-- <div class="mt-8 bg-blue-50 p-4 rounded-lg">
+  <h3 class="font-bold text-blue-600 mb-3">🔧 Essential Git Flow Commands</h3>
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+      # Start new feature<br>
+      git checkout develop<br>
+      git checkout -b feature/user-dashboard<br><br>
+      # Finish feature<br>
+      git checkout develop<br>
+      git merge feature/user-dashboard<br>
+      git branch -d feature/user-dashboard
+    </div>
+    <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+      # Create release<br>
+      git checkout -b release/v1.2.0 develop<br>
+      # After testing & fixes<br>
+      git checkout main<br>
+      git merge release/v1.2.0<br>
+      git tag -a v1.2.0 -m "Release v1.2.0"<br>
+      git checkout develop<br>
+      git merge release/v1.2.0
+    </div>
+  </div>
+</div> -->
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+
+
+---
+transition: fade-out
+---
+
+# GitLab Flow Strategy
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Environment Branches</span></h3>
+    <div class="text-sm space-y-2">
+      <div><strong>main:</strong> Development integration</div>
+      <div><strong>staging:</strong> Pre-production testing</div>
+      <div><strong>production:</strong> Live environment</div>
+      <div><strong>feature/*:</strong> Feature development</div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
+    <div class="text-sm space-y-1">
+      <div>✅ Multiple environments</div>
+      <div>✅ Staged deployments</div>
+      <div>✅ Enterprise applications</div>
+      <div>✅ Quality gates</div>
+      <div>✅ Compliance requirements</div>
+      <div>❌ Simple continuous deployment</div>
+      <div>❌ Small teams with single environment</div>
+    </div>
+    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Deployment Flow</span></h3>
+    <div class="text-sm space-y-2">
+      <div>1. <strong>Develop</strong> in feature branches</div>
+      <div>2. <strong>Merge</strong> to main after review</div>
+      <div>3. <strong>Deploy</strong> main to staging</div>
+      <div>4. <strong>Test</strong> in staging environment</div>
+      <div>5. <strong>Merge</strong> staging to production</div>
+      <div>6. <strong>Deploy</strong> to production</div>
+    </div> -->
+    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Feature development<br>
+        git checkout main<br>
+        git checkout -b feature/payment<br>
+        # ... develop feature ...<br>
+        git push origin feature/payment<br><br>
+        # After merge to main<br>
+        git checkout staging<br>
+        git merge main<br>
+        git push origin staging<br><br>
+        # After staging tests pass<br>
+        git checkout production<br>
+        git merge staging<br>
+        git push origin production
+      </div>
+    </div> -->
+  </div>
+  <div>
+    <div class="bg-white p-4 rounded border">
+```mermaid
+---
+config:
+  logLevel: 'debug'
+  theme: 'base'
+  gitGraph:
+    showBranches: true
+    showCommitLabel: true
+    mainBranchName: production
+---
+gitGraph:
+  commit id: " "
+  branch staging
+  branch main
+  checkout main
+  commit id: "Initial"
+  commit id: "Setup"
+  commit id: "Feature work"
+  branch feature/api
+  checkout feature/api
+  commit id: "Add API"
+  commit id: "Add tests"
+  checkout main
+  merge feature/api
+  commit id: "Integrate API"
+  checkout staging
+  merge main
+  commit id: "Deploy staging"
+  commit id: "Staging tests"
+  checkout production
+  commit id: " "
+  merge staging
+  commit id: "Deploy prod" tag: "v1.0"
+  checkout main
+  commit id: " "
+  branch feature/ui
+  checkout feature/ui
+  commit id: "Add UI"
+  commit id: "UI tests"
+  checkout main
+  merge feature/ui
+  commit id: "Integrate UI"
+  checkout staging
+  merge main
+  commit id: "Test UI staging"
+  checkout production
+  merge staging
+  commit id: "Deploy UI" tag: "v1.1"
+```
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Release Types</span></h3>
+    <div class="text-sm space-y-1">
+      <div>🔄 <strong>Environment promotion:</strong> Standard flow</div>
+      <div>🚀 <strong>Release branches:</strong> For versioned releases</div>
+      <div>🔧 <strong>Upstream first:</strong> For open source</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Git branching strategies - Further Reading
+
+- https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-git-branch-approach/visual-overview-of-the-trunk-strategy.html
+- https://docs.gitlab.com/user/project/repository/branches/strategies/
+- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+---
+transition: fade-out
+---
+
+# Git commands - The Basics
+
+<div class="grid grid-cols-2 gap-8 h-full">
+  <div class="flex justify-center items-center">
+    <img src="./src/git-commands.gif" alt="Git Commands Demo" class="max-w-full max-h-96 object-contain rounded-lg shadow-lg" />
+  </div>
+  
+  <div class="flex flex-col justify-center">
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Essential Git Commands</span></h3>
+    <div class="bg-gray-100 p-4 rounded font-mono text-sm">
+      <div class="text-green-600"># Basic workflow</div>
+      <div>git add &lt;file&gt;</div>
+      <div>git commit -m "message"</div>
+      <div>git push origin main</div>
+      <br>
+      <div class="text-green-600"># Synchronization</div>
+      <div>git fetch --all</div>
+      <div>git merge &lt;branch&gt;</div>
+      <div>git pull origin main</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 transition: fade-out
@@ -401,7 +797,6 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Getting Started</span></h3>
     <div class="mb-6">
       <h4 class="font-bold text-blue-600 mb-2">🎯 git init</h4>
       <div class="text-sm mb-2">Initialize a new Git repository</div>
@@ -417,16 +812,15 @@ transition: fade-out
       <div class="text-sm mb-2">Copy a repository from remote to local</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
         # Clone via HTTPS<br>
-        git clone https://github.com/user/repo.git<br><br>
+        git clone https://github.com/user/repo.git<br>
         # Clone via SSH<br>
-        git clone git@github.com:user/repo.git<br><br>
+        git clone git@github.com:user/repo.git<br>
         # Clone specific branch<br>
         git clone -b develop https://github.com/user/repo.git
       </div>
     </div>
   </div>
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Configuration</span></h3>
     <div class="mb-6">
       <h4 class="font-bold text-blue-600 mb-2">⚙️ git config</h4>
       <div class="text-sm mb-2">Configure Git settings</div>
@@ -438,12 +832,23 @@ transition: fade-out
         git config --list<br><br>
       </div>
     </div>
-    <div class="bg-green-50 p-4 rounded-lg">
-      <h4 class="font-bold text-green-600 mb-3">💡 Pro Tips</h4>
+    <!-- <div class="bg-green-50 p-4 rounded-lg"> -->
+      <!-- <h4 class="font-bold text-green-600 mb-3">💡 Pro Tips</h4>
       <div class="text-sm space-y-2">
         <div>🔧 Use <strong>--global</strong> for user-wide settings</div>
         <div>📁 Use <strong>--local</strong> for project-specific config</div>
         <div>🔍 Check config with <strong>git config --list --show-origin</strong></div>
+      </div> -->
+    <div class="mb-6">
+      <h4 class="font-bold text-green-600 mb-2">🔗 git remote</h4>
+      <div class="text-sm mb-2">Manage remote repositories</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # View remotes<br>
+        git remote -v<br>
+        # Add remote<br>
+        git remote add origin https://github.com/user/repo.git<br>
+        # Change remote URL<br>
+        git remote set-url origin git@github.com:user/repo.git
       </div>
     </div>
   </div>
@@ -465,11 +870,10 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Basic Workflow
+# Essential Git Commands - Push
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Staging Changes</span></h3>
     <div class="mb-6">
       <h4 class="font-bold text-green-600 mb-2">➕ git add</h4>
       <div class="text-sm mb-2">Stage changes for commit</div>
@@ -477,7 +881,7 @@ transition: fade-out
         git add index.html # Add specific file<br>
         git add . # Add all changes<br>
         git add *.js # Add files by pattern<br>
-        git add -p # Interactive staging
+        git add -p # Interactive staging<br>
         git add -p index.html # Interactive staging for specific file
       </div>
     </div>
@@ -490,24 +894,25 @@ transition: fade-out
         # Commit and stage all tracked files<br>
         git commit -am "fix: resolve login bug"<br>
         # Amend last commit message<br>
-        git commit --amend -m "Updated message"
+        git commit --amend -m "Updated message"<br>
         # Amend last commit author<br>
         git commit --amend --reset-author --no-edit 
       </div>
     </div>
   </div>
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Remote Management</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-green-600 mb-2">🔗 git remote</h4>
-      <div class="text-sm mb-2">Manage remote repositories</div>
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # View remotes<br>
-        git remote -v<br>
-        # Add remote<br>
-        git remote add origin https://github.com/user/repo.git<br>
-        # Change remote URL<br>
-        git remote set-url origin git@github.com:user/repo.git
+      <h4 class="font-bold text-purple-600 mb-2">🚀 git push</h4>
+      <div class="text-sm mb-2">Upload local commits to remote repository</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
+        # Push to default remote/branch<br>
+        git push<br>
+        # Push and set upstream<br>
+        git push -u origin feature/new-login<br>
+        # Push all branches<br>
+        git push --all<br>
+        # Push tags<br>
+        git push --tags
       </div>
     </div>
     <div class="bg-blue-50 p-4 rounded-lg">
@@ -538,63 +943,59 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Synchronization
+# Essential Git Commands - Syncing Changes
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Uploading Changes</span></h3>
-    <div class="mb-6">
-      <h4 class="font-bold text-purple-600 mb-2">🚀 git push</h4>
-      <div class="text-sm mb-2">Upload local commits to remote repository</div>
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
-        # Push to default remote/branch<br>
-        git push<br><br>
-        # Push and set upstream<br>
-        git push -u origin feature/new-login<br><br>
-        # Push all branches<br>
-        git push --all<br><br>
-        # Push tags<br>
-        git push --tags
-      </div>
-    </div>
-    <div class="bg-yellow-50 p-4 rounded-lg">
-      <h4 class="font-bold text-yellow-600 mb-3">⚠️ Push Guidelines</h4>
-      <div class="text-sm space-y-2">
-        <div>🔒 Never push to main directly (use PRs)</div>
-        <div>🧪 Run tests before pushing</div>
-        <div>💾 Push feature branches for backup</div>
-        <div>🏷️ Push tags separately with --tags</div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Downloading Changes</span></h3>
-    <div class="mb-6">
-      <h4 class="font-bold text-purple-600 mb-2">⬇️ git pull</h4>
-      <div class="text-sm mb-2">Fetch and merge changes from remote</div>
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
-        # Pull latest changes<br>
-        git pull<br><br>
-        # Pull with rebase<br>
-        git pull --rebase<br><br>
-        # Pull specific branch<br>
-        git pull origin main<br><br>
-        # Pull without fast-forward<br>
-        git pull --no-ff
-      </div>
-    </div>
     <div class="mb-6">
       <h4 class="font-bold text-purple-600 mb-2">📡 git fetch</h4>
       <div class="text-sm mb-2">Download changes without merging</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
         # Fetch all remotes<br>
-        git fetch<br><br>
+        git fetch -a<br>
         # Fetch specific remote<br>
-        git fetch origin<br><br>
+        git fetch origin<br>
         # Fetch and prune deleted branches<br>
         git fetch --prune
       </div>
     </div>
+    <div class="mb-6">
+      <h4 class="font-bold text-orange-600 mb-2">🔗 git merge</h4>
+      <div class="text-sm mb-2">Combine changes from different branches</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
+        # Merge feature branch into current<br>
+        git merge feature/new-api<br>
+        # Merge with no fast-forward<br>
+        git merge --no-ff feature/payment<br>
+        # Merge with squash<br>
+        git merge --squash feature/cleanup
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="mb-6">
+      <h4 class="font-bold text-purple-600 mb-2">⬇️ git pull</h4>
+      <div class="text-sm mb-2">Fetch and merge changes from remote</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
+        # Pull latest changes from remote<br>
+        git pull<br>
+        # Pull specific branch<br>
+        git pull origin main<br>
+        # Pull with rebase (cleaner history)<br>
+        git pull --rebase<br>
+        # Pull without creating merge commit<br>
+        git pull --ff-only
+      </div>
+        </div>
+        <div class="bg-yellow-50 p-4 rounded-lg">
+      <h4 class="font-bold text-yellow-600 mb-3">⚠️ Synchronization Tips</h4>
+      <div class="text-sm space-y-2">
+        <div>📡 <strong>Fetch first</strong> to see changes before merging</div>
+        <div>🔄 <strong>Pull regularly</strong> to avoid large conflicts</div>
+        <div>⚡ <strong>Use rebase</strong> for cleaner commit history</div>
+        <div>🎯 <strong>Resolve conflicts</strong> immediately when they occur</div>
+      </div>
+        </div>
   </div>
 </div>
 
@@ -618,60 +1019,83 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Switching Branches</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-orange-600 mb-2">🔄 git switch</h4>
+      <h4 class="font-bold text-orange-600 mb-2">🔄 git checkout</h4>
+      <div class="text-sm mb-2">Switch branches and restore files (classic approach)</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
+        # Switch to existing branch<br>
+        git checkout main<br>
+        # Create and switch to new branch<br>
+        git checkout -b feature/new-feature<br>
+        # Checkout specific commit<br>
+        git checkout abc123<br>
+        # Restore file from another branch<br>
+        git checkout main -- file.txt
+      </div>
+    </div>
+    <div class="mb-6">
+      <h4 class="font-bold text-orange-600 mb-2">🆕 git switch</h4>
       <div class="text-sm mb-2">Switch between branches (modern approach)</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
         # Switch to existing branch<br>
-        git switch main<br><br>
+        git switch main<br>
         # Create and switch to new branch<br>
-        git switch -c feature/user-profile<br><br>
+        git switch -c feature/user-profile<br>
         # Switch to previous branch<br>
-        git switch -<br><br>
+        git switch -<br>
         # Switch to remote branch<br>
         git switch -c local-branch origin/remote-branch
       </div>
     </div>
-    <div class="bg-green-50 p-4 rounded-lg">
-      <h4 class="font-bold text-green-600 mb-3">🌿 Branch Best Practices</h4>
-      <div class="text-sm space-y-2">
-        <div>📝 Use descriptive branch names</div>
-        <div>🔄 Switch often, commit frequently</div>
-        <div>🧹 Delete merged branches</div>
-        <div>📡 Push feature branches for backup</div>
-      </div>
-    </div>
   </div>
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Combining Changes</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-orange-600 mb-2">🔗 git merge</h4>
-      <div class="text-sm mb-2">Combine changes from different branches</div>
+      <h4 class="font-bold text-purple-600 mb-2">💾 git stash</h4>
+      <div class="text-sm mb-2">Temporarily save uncommitted changes</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
-        # Merge feature branch into current<br>
-        git merge feature/new-api<br><br>
-        # Merge with no fast-forward<br>
-        git merge --no-ff feature/payment<br><br>
-        # Merge with squash<br>
-        git merge --squash feature/cleanup
+        # Stash current changes<br>
+        git stash<br>
+        # Apply latest stash<br>
+        git stash apply<br>
       </div>
     </div>
     <div class="mb-6">
-      <h4 class="font-bold text-orange-600 mb-2">💾 git stash</h4>
-      <div class="text-sm mb-2">Temporarily save uncommitted changes</div>
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Stash current changes<br>
-        git stash<br><br>
-        # Stash with message<br>
-        git stash push -m "WIP: fixing login"<br><br>
-        # Apply latest stash<br>
-        git stash pop<br><br>
-        # List all stashes<br>
-        git stash list
+      <h4 class="font-bold text-blue-600 mb-2">📦 git submodule</h4>
+      <div class="text-sm mb-2">Manage external repositories within your project</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
+        # Add submodule<br>
+        git submodule add https://github.com/user/repo.git libs/repo<br>
+        # Initialize submodules<br>
+        git submodule init<br>
+        # Update submodules<br>
+        git submodule update<br>
+        # Clone with submodules<br>
+        git clone --recursive https://github.com/user/main-repo.git
       </div>
     </div>
   </div>
+</div>
+
+<div class="mt-8 grid grid-cols-2 gap-8">
+  <div class="bg-green-50 p-4 rounded-lg">
+    <h4 class="font-bold text-green-600 mb-3">🌿 Branch Best Practices</h4>
+    <div class="text-sm space-y-2">
+      <div>📝 Use descriptive branch names</div>
+      <div>🔄 Switch often, commit frequently</div>
+      <div>🧹 Delete merged branches</div>
+      <div>📡 Push feature branches for backup</div>
+      <div>⚡ Prefer <strong>git switch</strong> over checkout for branches</div>
+    </div>
+  </div>
+  <!-- <div class="bg-blue-50 p-4 rounded-lg">
+    <h4 class="font-bold text-blue-600 mb-3">💡 Pro Tips</h4>
+    <div class="text-sm space-y-2">
+      <div>💾 Use stash when switching branches with uncommitted work</div>
+      <div>📦 Submodules help manage dependencies and shared code</div>
+      <div>🔍 Use <strong>git switch</strong> for safer branch operations</div>
+      <div>🎯 Checkout is powerful but can be confusing for beginners</div>
+    </div>
+  </div> -->
 </div>
 
 <style>
@@ -694,129 +1118,56 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Restoring Files</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-red-600 mb-2">↩️ git restore</h4>
-      <div class="text-sm mb-2">Restore files to previous state (modern approach)</div>
+      <h4 class="font-bold text-blue-600 mb-2">🔄 git restore</h4>
+      <div class="text-sm mb-2">Restore files to previous state (modern, safe approach)</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
         # Restore working directory file<br>
-        git restore index.html<br><br>
-        # Restore staged file<br>
-        git restore --staged config.js<br><br>
+        git restore index.html<br>
+        # Restore staged file (unstage)<br>
+        git restore --staged config.js<br>
         # Restore from specific commit<br>
-        git restore --source=HEAD~2 app.js<br><br>
-        # Restore all files<br>
+        git restore --source=HEAD~2 app.js<br>
+        # Restore all modified files<br>
         git restore .
       </div>
     </div>
-    <div class="bg-red-50 p-4 rounded-lg">
-      <h4 class="font-bold text-red-600 mb-3">⚠️ Restore Use Cases</h4>
-      <div class="text-sm space-y-2">
-        <div>🔧 Fix accidental file changes</div>
-        <div>📤 Unstage files from staging area</div>
-        <div>⏮️ Restore from specific commit</div>
-        <div>🧹 Clean working directory</div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Resetting State</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-red-600 mb-2">🔄 git reset</h4>
-      <div class="text-sm mb-2">Reset repository state to specific commit</div>
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+      <h4 class="font-bold text-orange-600 mb-2">⚡ git reset</h4>
+      <div class="text-sm mb-2">Move branch pointer and reset repository state</div>
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
         # Soft reset (keep changes staged)<br>
-        git reset --soft HEAD~1<br><br>
+        git reset --soft HEAD~1<br>
         # Mixed reset (unstage changes)<br>
-        git reset HEAD~1<br><br>
-        # Hard reset (discard all changes)<br>
-        git reset --hard HEAD~1<br><br>
+        git reset HEAD~1<br>
+        # Hard reset (⚠️ discard all changes)<br>
+        git reset --hard HEAD~1<br>
         # Reset specific file<br>
         git reset HEAD file.txt
       </div>
     </div>
-    <div class="bg-yellow-50 p-4 rounded-lg">
-      <h4 class="font-bold text-yellow-600 mb-3">🛡️ Reset Safety</h4>
-      <div class="text-sm space-y-2">
-        <div>🔒 <strong>--soft:</strong> Safe, keeps your work</div>
-        <div>🟡 <strong>--mixed:</strong> Default, unstages changes</div>
-        <div>🔴 <strong>--hard:</strong> Dangerous, loses work!</div>
-        <div>⚠️ Only use on unpushed commits</div>
-      </div>
-    </div>
   </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Essential Git Commands - Safe Undoing
-
-<div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Safe Undo Operations</span></h3>
     <div class="mb-6">
-      <h4 class="font-bold text-yellow-600 mb-2">⏪ git revert</h4>
-      <div class="text-sm mb-2">Create new commit that undoes previous changes</div>
+      <h4 class="font-bold text-green-600 mb-2">⏪ git revert</h4>
+      <div class="text-sm mb-2">Create new commit that undoes previous changes (safest)</div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs mb-3">
         # Revert last commit<br>
-        git revert HEAD<br><br>
+        git revert HEAD<br>
         # Revert specific commit<br>
-        git revert abc123<br><br>
-        # Revert without committing<br>
-        git revert --no-commit HEAD<br><br>
+        git revert abc123<br>
+        # Revert without committing immediately<br>
+        git revert --no-commit HEAD<br>
         # Revert merge commit<br>
         git revert -m 1 abc123
       </div>
     </div>
-    <div class="bg-green-50 p-4 rounded-lg">
-      <h4 class="font-bold text-green-600 mb-3">✅ Why Use Revert?</h4>
-      <div class="text-sm space-y-2">
-        <div>🔒 Safe for shared/public history</div>
-        <div>📜 Preserves commit history</div>
-        <div>🔄 Can be reverted again later</div>
-        <div>👥 Doesn't affect other developers</div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Command Comparison</span></h3>
     <div class="bg-blue-50 p-4 rounded-lg mb-4">
-      <h4 class="font-bold text-blue-600 mb-3">🎯 Quick Reference</h4>
+      <h4 class="font-bold text-blue-600 mb-3">🎯 When to Use Each</h4>
       <div class="text-sm space-y-2">
         <div><strong>git restore:</strong> Fix working directory mistakes</div>
-        <div><strong>git reset:</strong> Move branch pointer (use carefully)</div>
-        <div><strong>git revert:</strong> Safe undo for shared history</div>
-      </div>
-    </div>
-    <div class="bg-yellow-50 p-4 rounded-lg">
-      <h4 class="font-bold text-yellow-600 mb-3">⚠️ Safety Guidelines</h4>
-      <div class="text-sm space-y-2">
-        <div>🔒 Use <strong>revert</strong> for public commits</div>
-        <div>🎯 Use <strong>reset</strong> only for local commits</div>
-        <div>💾 Always check <strong>git status</strong> first</div>
-        <div>🔍 Use <strong>git log --oneline</strong> to see history</div>
-        <div>🧪 Test in a separate branch when unsure</div>
-      </div>
-    </div>
-    <div class="bg-gray-50 p-4 rounded-lg mt-4">
-      <h4 class="font-bold text-gray-600 mb-3">🆘 Emergency Commands</h4>
-      <div class="text-sm space-y-1">
-        <div class="font-mono text-xs">git reflog  # See all ref changes</div>
-        <div class="font-mono text-xs">git fsck --lost-found  # Find lost commits</div>
+        <div><strong>git reset:</strong> Undo local commits (use carefully)</div>
+        <div><strong>git revert:</strong> Undo public/shared commits (safest)</div>
       </div>
     </div>
   </div>
@@ -838,13 +1189,184 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Scenario 1: Merge conflict after commit
+# Git Commit Messages
 
-git clone -> git checkout -b {{branch-name}} -> git add {{file-name}} -> git commit -m "{{message}}" -> git pull origin {} (conflict) -> git pull origin {} --no-rebase -> resolve conflict -> git push --set-upstram {{remote-name}} {{branch-name}}
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Commit Message Structure</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+      git commit -m "&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;"
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Commit Types</span></h3>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="text-sm space-y-1">
+        <div><strong>feat:</strong> New feature</div>
+        <div><strong>fix:</strong> Bug fix</div>
+        <div><strong>docs:</strong> Documentation</div>
+        <div><strong>style:</strong> Formatting</div>
+      </div>
+      <div class="text-sm space-y-1">
+        <div><strong>refactor:</strong> Code restructuring</div>
+        <div><strong>test:</strong> Adding tests</div>
+        <div><strong>chore:</strong> Maintenance</div>
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Quick Tips</span></h3>
+    <div class="text-sm space-y-1">
+      <div>📝 Use imperative mood: "add" not "added"</div>
+      <div>📏 Keep subject under 50 characters</div>
+      <div>💡 Explain what and why, not how</div>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Good Examples</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-green-100 p-2 rounded font-mono text-xs">
+      feat(auth): add OAuth integration<br><br>
+      fix(api): resolve timeout issue<br><br>
+      docs(readme): update setup instructions<br><br>
+      refactor(utils): simplify date formatting
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bad Examples</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-red-100 p-2 rounded font-mono text-xs">
+      ❌ update stuff<br>
+      ❌ fix bug<br>
+      ❌ WIP<br>
+      ❌ final version
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 transition: fade-out
 ---
+
+# Common Scenario 1: Merge Conflict Resolution
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">When Conflicts Occur</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🔀 <strong>During merge:</strong> git merge feature-branch</div>
+      <div>⬇️ <strong>During pull:</strong> git pull origin main</div>
+      <div>🔄 <strong>During rebase:</strong> git rebase main</div>
+      <div>🍒 <strong>During cherry-pick:</strong> git cherry-pick abc123</div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Step-by-Step Resolution</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # 1. Check status<br>
+        git status<br><br>
+        # 2. Open conflicted files<br>
+        # Look for conflict markers:<br>
+        # &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+        # Your changes<br>
+        # =======<br>
+        # Their changes<br>
+        # &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name<br><br>
+        # 3. Edit and resolve<br>
+        # 4. Stage resolved files<br>
+        git add .<br><br>
+        # 5. Complete the merge<br>
+        git commit -m "resolve merge conflicts"
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Conflict Example</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-red-100 p-2 rounded font-mono text-xs">
+        <strong>Before resolution (app.js):</strong><br>
+        function calculateTotal(items) {<br>
+        &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+        &nbsp;&nbsp;return items.reduce((sum, item) => sum + item.price, 0);<br>
+        =======<br>
+        &nbsp;&nbsp;let total = 0;<br>
+        &nbsp;&nbsp;for(let item of items) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;total += item.price * item.quantity;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;return total;<br>
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/quantity-calculation<br>
+        }
+      </div>
+      <div class="bg-green-100 p-2 rounded font-mono text-xs">
+        <strong>After resolution:</strong><br>
+        function calculateTotal(items) {<br>
+        &nbsp;&nbsp;return items.reduce((sum, item) => {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return sum + (item.price * (item.quantity || 1));<br>
+        &nbsp;&nbsp;}, 0);<br>
+        }
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Prevention Tips</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📡 <strong>Pull frequently</strong> to stay updated</div>
+      <div>🔄 <strong>Rebase feature branches</strong> regularly</div>
+      <div>📦 <strong>Keep commits small</strong> and focused</div>
+      <div>🤝 <strong>Communicate</strong> about overlapping work</div>
+      <div>🧪 <strong>Use merge tools</strong> for complex conflicts</div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-8 bg-blue-50 p-4 rounded-lg">
+  <h4 class="font-bold text-blue-600 mb-3">🛠️ Useful Merge Tools</h4>
+  <div class="grid grid-cols-3 gap-4 text-sm">
+    <div>
+      <div class="font-bold">VS Code</div>
+      <div class="text-xs">Built-in 3-way merge</div>
+    </div>
+    <div>
+      <div class="font-bold">GitKraken</div>
+      <div class="text-xs">Visual merge editor</div>
+    </div>
+    <div>
+      <div class="font-bold">Meld</div>
+      <div class="text-xs">Cross-platform tool</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Common Scenario 2: Conflict before checkout
+
+Happens when you try to switch branches while having uncommitted changes that conflict with the target branch.
+
+
+
 
 <!-- # Branching Strategies Overview
 
