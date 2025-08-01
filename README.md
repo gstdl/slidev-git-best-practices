@@ -1,6 +1,6 @@
-# Data Engineering Fundamentals
+# Git Best Practices
 
-https://gstdl.github.io/de-fundamentals/
+https://gstdl.github.io/git-best-practices/
 
 # Made using slidev
 

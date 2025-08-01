@@ -189,24 +189,19 @@ transition: fade-out
     <div class="text-sm space-y-2">
       <div>🛡️ <strong>Require pull request reviews</strong></div>
       <div>✅ <strong>Require status checks</strong></div>
-      <div>🚫 <strong>Restrict pushes to main</strong></div>
+      <div>🚫 <strong>Restrict pushes to main</strong> </div>
       <div>🔄 <strong>Require up-to-date branches</strong></div>
       <div>👑 <strong>Include administrators</strong></div>
     </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">CI/CD setup</span></h3>
+    <h3 class="text-lg font-bold mb-4 mt-4"><span class="text-highlight">CI/CD setup & Contributor Helpers</span></h3>
     <div class="text-sm space-y-2">
         <div>🔗 <strong>Pre-commit hooks:</strong> git hooks, husky</div>
         <div>🚀 <strong>Post-commit workflows:</strong> GitHub Actions, Azure Pipelines, Jenkins, GitKraken</div>
         <div>📊 <strong>Quality gates:</strong> Github actions summary, Azure Devops Test Plan, Sonarqube</div>
-        <div>🎯 <strong>Integrations:</strong> Slack integration, LLM review, Jira integration</div>
+        <div>🎯 <strong>Integrations:</strong> Slack integration, LLM integration (review, config), Jira integration</div>
+        <div>📄 <strong>Templates:</strong> PR templates, issue templates, commit templates</div>
     </div>
   </div>
-</div>
-
-<div class="mt-8 grid grid-cols-2 gap-8">
   <div>
     <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Secrets Management</span></h3>
     <div class="text-sm space-y-2">
@@ -215,10 +210,8 @@ transition: fade-out
       <div>🔄 <strong>Automatic secret rotation</strong></div>
       <div>🎯 <strong>Least privilege access</strong></div>
     </div>
-  </div>
-  <div>
   <!-- <h3 class="text-lg font-bold mb-4"><span class="text-highlight">CI/CD Pipeline Visualization</span></h3> -->
-  <div class="flex justify-center">
+  <div class="flex justify-center mt-8">
     <img src="https://www.mabl.com/hubfs/CICDBlog.png" alt="CI/CD Pipeline Flow" class="max-w-full h-auto rounded-lg shadow-lg" />
   </div>
   </div>
@@ -754,46 +747,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Git commands - The Basics
-
-<div class="grid grid-cols-2 gap-8 h-full">
-  <div class="flex justify-center items-center">
-    <img src="./src/git-commands.gif" alt="Git Commands Demo" class="max-w-full max-h-96 object-contain rounded-lg shadow-lg" />
-  </div>
-  
-  <div class="flex flex-col justify-center">
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Essential Git Commands</span></h3>
-    <div class="bg-gray-100 p-4 rounded font-mono text-sm">
-      <div class="text-green-600"># Basic workflow</div>
-      <div>git add &lt;file&gt;</div>
-      <div>git commit -m "message"</div>
-      <div>git push origin main</div>
-      <br>
-      <div class="text-green-600"># Synchronization</div>
-      <div>git fetch --all</div>
-      <div>git merge &lt;branch&gt;</div>
-      <div>git pull origin main</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Essential Git Commands - Repository Setup
+# Git Commands - Repository Setup
 
 <div class="grid grid-cols-2 gap-8">
   <div>
@@ -870,7 +824,46 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Push
+# Git Commands - The Basics
+
+<div class="grid grid-cols-2 gap-8 h-full">
+  <div class="flex justify-center items-center">
+    <img src="./src/git-commands.gif" alt="Git Commands Demo" class="max-w-full max-h-96 object-contain rounded-lg shadow-lg" />
+  </div>
+  
+  <div class="flex flex-col justify-center">
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Essential Git Commands</span></h3>
+    <div class="bg-gray-100 p-4 rounded font-mono text-sm">
+      <div class="text-green-600"># Basic workflow</div>
+      <div>git add &lt;file&gt;</div>
+      <div>git commit -m "message"</div>
+      <div>git push origin main</div>
+      <br>
+      <div class="text-green-600"># Synchronization</div>
+      <div>git fetch --all</div>
+      <div>git merge &lt;branch&gt;</div>
+      <div>git pull origin main</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Git Commands - Push
 
 <div class="grid grid-cols-2 gap-8">
   <div>
@@ -943,7 +936,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Syncing Changes
+# Git Commands - Syncing Changes
 
 <div class="grid grid-cols-2 gap-8">
   <div>
@@ -1015,7 +1008,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Branch Management
+# Git Commands - Branch Management
 
 <div class="grid grid-cols-2 gap-8">
   <div>
@@ -1114,7 +1107,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Essential Git Commands - Undoing Changes
+# Git Commands - Undoing Changes
 
 <div class="grid grid-cols-2 gap-8">
   <div>
@@ -1242,6 +1235,64 @@ transition: fade-out
   </div>
 </div>
 
+---
+transition: fade-out
+---
+
+# Pull Request Best Practices
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Creating PRs</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📝 <strong>Write descriptive titles</strong> that explain the change</div>
+      <div>📋 <strong>Use PR templates</strong> for consistent information</div>
+      <div>🎯 <strong>Keep PRs small and focused</strong> (< 400 lines)</div>
+      <div>🔗 <strong>Link to related issues</strong> or work items</div>
+      <div>📸 <strong>Include screenshots</strong> for UI changes</div>
+      <div>✅ <strong>Self-review before submitting</strong></div>
+    </div>
+    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Review Process</span></h3>
+    <div class="text-sm space-y-2">
+      <div>👀 <strong>Review promptly</strong> (within 24 hours)</div>
+      <div>🎯 <strong>Focus on logic, not style</strong> (use automated tools)</div>
+      <div>💬 <strong>Provide constructive feedback</strong></div>
+      <div>🔒 <strong>Check for security issues</strong></div>
+      <div>📚 <strong>Verify documentation updates</strong></div>
+      <div>🧪 <strong>Ensure adequate test coverage</strong></div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">PR Description Template</span></h3>
+      <div class="text-sm space-y-2">
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        ## What changed?<br>
+        Brief summary of the changes<br><br>
+        ## Why?<br>
+        Explain the motivation and context<br><br>
+        ## How to test?<br>
+        - Step 1: Do this<br>
+        - Step 2: Verify that<br><br>
+        ## Checklist<br>
+        - [ ] Tests added/updated<br>
+        - [ ] Documentation updated<br>
+        - [ ] Breaking changes noted
+        </div>
+      </div>
+      <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Additional Resources</span></h3>
+      <div class="text-sm space-y-2">
+        <ul class="space-y-1">
+        <li><a href="https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Azure DevOps Pull Requests Documentation</a></li>
+        <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank" class="text-blue-600 hover:text-blue-800 underline">GitHub Pull Request Creation Guide</a></li>
+        </ul>
+      </div>
+
+  </div>
+</div>
+
+
+
 <style>
 .text-highlight {
   background-color: #2B90B6;
@@ -1253,6 +1304,184 @@ transition: fade-out
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
+transition: fade-out
+---
+
+# Git Conflict (scenario)
+
+🧪 Example Scenario
+
+Assume:
+-	Remote main: A—B—C
+-	Local feature/xy: A—B—X—Y
+
+```bash
+> git pull origin main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+```
+
+---
+transition: fade-out
+---
+
+# Git Conflict (`--no-rebase`)
+
+🧪 Example Scenario
+
+Assume:
+- Remote main: A—B—C
+-	Local feature/xy: A—B—X—Y
+
+```sh
+git pull origin main --no-rebase
+```
+
+⸻
+
+Result:
+```
+         A---B---C
+                \ 
+                 M  ← Merge commit
+                  \
+                   X---Y
+```
+
+✔ Preserves local history, adds a merge commit.
+
+---
+transition: fade-out
+---
+
+# Git Conflict (`--rebase`)
+
+🧪 Example Scenario
+
+Assume:
+- Remote main: A—B—C
+-	Local feature/xy: A—B—X—Y
+
+```sh
+git pull origin main --rebase
+```
+⸻
+
+Result:
+```
+         A---B---C---X'---Y'
+```
+
+✔ Rewrites your local commits to appear after the latest remote commit (cleaner history).
+
+---
+transition: fade-out
+---
+
+# Git Conflict (`--ff-only`)
+
+🧪 Example Scenario
+
+Assume:
+- Remote main: A—B—C
+-	Local feature/xy: A—B—X—Y
+
+```sh
+git pull origin main --ff-only
+```
+
+Result:
+```
+         A---B---C  ← Only fast-forwards allowed
+(Local must match remote exactly or be behind)
+```
+
+-	Only succeeds if your local has no unique commits.
+-	Fails in the scenario above because of X and Y.
+
+---
+transition: fade-out
+---
+
+# Git Conflict (summary)
+
+
+<div class="grid grid-cols-1 gap-8 p-8">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 p-3 text-left font-bold">Aspect</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-blue-600">--no-rebase</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-green-600">--rebase</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-purple-600">--ff-only</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 p-3 font-semibold">🔀 Strategy</td>
+          <td class="border border-gray-300 p-3">Creates merge commit to combine divergent branches</td>
+          <td class="border border-gray-300 p-3">Replays local commits on top of remote commits</td>
+          <td class="border border-gray-300 p-3">Only fast-forwards, no merge or rebase</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-semibold">📈 History</td>
+          <td class="border border-gray-300 p-3">Preserves original commit history with merge commit</td>
+          <td class="border border-gray-300 p-3">Creates linear history, rewrites local commits</td>
+          <td class="border border-gray-300 p-3">Maintains linear history, no additional commits</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-semibold">🔄 Conflicts</td>
+          <td class="border border-gray-300 p-3">May require conflict resolution during merge</td>
+          <td class="border border-gray-300 p-3">May require conflict resolution for each commit</td>
+          <td class="border border-gray-300 p-3">Fails if there are any conflicts</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 p-3 font-semibold">✅ When to Use</td>
+          <td class="border border-gray-300 p-3">Default choice, preserves complete history</td>
+          <td class="border border-gray-300 p-3">Want clean linear history, feature branches</td>
+          <td class="border border-gray-300 p-3">Ensure no merge commits, strict workflows</td>
+        </tr>
+        <!-- <tr class="bg-gray-50">
+          <td class="border border-gray-300 p-3 font-semibold">⚠️ Risks</td>
+          <td class="border border-gray-300 p-3">Can create "merge commit noise" in history</td>
+          <td class="border border-gray-300 p-3">Rewrites history, can cause issues if commits are public</td>
+          <td class="border border-gray-300 p-3">Will fail if you have any local commits</td>
+        </tr> -->
+        <tr>
+          <td class="border border-gray-300 p-3 font-semibold">👥 Team Impact</td>
+          <td class="border border-gray-300 p-3">Safe for shared repositories</td>
+          <td class="border border-gray-300 p-3">Avoid if commits are already pushed/shared</td>
+          <td class="border border-gray-300 p-3">Safe, prevents accidental merges</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="mt-6 bg-yellow-50 p-4 rounded-lg">
+  <h4 class="font-bold text-yellow-600 mb-3">💡 Recommendation</h4>
+  <div class="text-sm space-y-2">
+    <div>🎯 <strong>Default (--no-rebase):</strong> Safe for most situations, preserves history</div>
+    <div>🧹 <strong>--rebase:</strong> Use for feature branches to maintain clean history</div>
+    <div>🛡️ <strong>--ff-only:</strong> Use in CI/CD or when you want to ensure no merge commits</div>
+  </div>
+</div>
+
+
 
 ---
 transition: fade-out
