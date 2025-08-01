@@ -6,7 +6,7 @@ theme: default
 background: pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
 title: "Git Best Practices"
-info: "Git best practices for GitHub and Azure DevOps"
+info: "Git best practices"
 # apply unocss classes to the current slide
 class: text-left
 # https://sli.dev/features/drawing
@@ -19,11 +19,7 @@ mdc: true
 ---
 
 # Git Best Practices
-## For GitHub and Azure DevOps
-
-<!--
 Comprehensive guide to Git best practices for modern development workflows
--->
 
 ---
 transition: fade-out
@@ -2344,7 +2340,6 @@ class: text-center
 <div class="mt-8 text-sm">
 <div class="font-bold">📚 Additional Resources:</div>
 <div>• Pro Git Book (git-scm.com/book)</div>
-<div>• GitHub Docs & Azure DevOps Documentation</div>
 <div>• Conventional Commits (conventionalcommits.org)</div>
 </div>
 
