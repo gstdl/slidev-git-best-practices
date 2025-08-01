@@ -33,7 +33,7 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Distributed Version Control</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Distributed Version Control</span></h3>
     <div class="text-sm space-y-2">
       <div>📁 <strong>Track changes</strong> in files over time</div>
       <div>🔄 <strong>Collaborate</strong> with multiple developers</div>
@@ -41,7 +41,7 @@ transition: fade-out
       <div>⚡ <strong>Fast</strong> - most operations are local</div>
       <div>🔒 <strong>Integrity</strong> - everything is checksummed</div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Key Concepts</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Key Concepts</span></h3>
     <div class="text-sm space-y-2">
       <div>📦 <strong>Repository:</strong> Project directory with Git tracking</div>
       <div>📸 <strong>commit id:</strong> Snapshot of your code at a point in time</div>
@@ -112,7 +112,7 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Authentication</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Authentication</span></h3>
     <div class="text-sm space-y-2">
       Choose 1:
       <ul>
@@ -121,7 +121,7 @@ transition: fade-out
       </ul>
     </div>
     <p></p>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Sample Repository Structure</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Sample Repository Structure</span></h3>
     <div class="text-sm space-y-1">
       <div>📄 <strong>README.md</strong> - Project overview and setup</div>
       <div>📄 <strong>.gitignore</strong> - Files and directories to ignore</div>
@@ -133,7 +133,7 @@ transition: fade-out
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Initial git Setup</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Initial git Setup</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono">
         git config user.name "Your Name"<br>
@@ -147,7 +147,7 @@ transition: fade-out
       </div>
     </div>
     <p></p>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Essential .gitignore</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Essential .gitignore</span></h3>
         <div class="bg-gray-100 p-2 rounded font-mono text-xs">
           # Common files to ignore<br>
           node_modules/<br>
@@ -185,7 +185,7 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Branch Protection Rules</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Branch Protection Rules</span></h3>
     <div class="text-sm space-y-2">
       <div>🛡️ <strong>Require pull request reviews</strong></div>
       <div>✅ <strong>Require status checks</strong></div>
@@ -193,7 +193,7 @@ transition: fade-out
       <div>🔄 <strong>Require up-to-date branches</strong></div>
       <div>👑 <strong>Include administrators</strong></div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-4"><span class="text-highlight">CI/CD setup & Contributor Helpers</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-4"><span class="text-highlight">CI/CD setup & Contributor Helpers</span></h3>
     <div class="text-sm space-y-2">
         <div>🔗 <strong>Pre-commit hooks:</strong> git hooks, husky</div>
         <div>🚀 <strong>Post-commit workflows:</strong> GitHub Actions, Azure Pipelines, Jenkins, GitKraken</div>
@@ -203,14 +203,14 @@ transition: fade-out
     </div>
   </div>
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Secrets Management</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Secrets Management</span></h3>
     <div class="text-sm space-y-2">
       <div>🔐 <strong>Repository secrets for CI/CD</strong></div>
       <div>🌍 <strong>Environment-specific secrets</strong></div>
       <div>🔄 <strong>Automatic secret rotation</strong></div>
       <div>🎯 <strong>Least privilege access</strong></div>
     </div>
-  <!-- <h3 class="text-lg font-bold mb-4"><span class="text-highlight">CI/CD Pipeline Visualization</span></h3> -->
+  <!-- <h3 class="text-lg font-bold mb-2"><span class="text-highlight">CI/CD Pipeline Visualization</span></h3> -->
   <div class="flex justify-center mt-8">
     <img src="https://www.mabl.com/hubfs/CICDBlog.png" alt="CI/CD Pipeline Flow" class="max-w-full h-auto rounded-lg shadow-lg" />
   </div>
@@ -311,8 +311,8 @@ layout: none
 
 <div class="grid grid-cols-2 gap-8 p-4">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Best Use Cases</span></h3>
-    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Best Use Cases</span></h3>
+    <div class="bg-blue-50 p-4 rounded-lg mb-2">
       <h4 class="font-bold text-blue-600 mb-3">🔧 Pre-commit Hooks</h4>
       <div class="text-sm space-y-2">
         <div>• Code formatting (Prettier, Black)</div>
@@ -338,7 +338,7 @@ layout: none
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Hybrid Approach</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Hybrid Approach</span></h3>
     <div class="bg-yellow-50 p-4 rounded-lg">
       <h4 class="font-bold text-yellow-600 mb-3">🎯 Recommended Strategy</h4>
       <div class="text-sm space-y-3">
@@ -469,12 +469,12 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Simple Workflow</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Simple Workflow</span></h3>
     <div class="text-sm space-y-2">
       <div><strong>main:</strong> Always deployable production code</div>
       <div><strong>feature/*:</strong> All development work</div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Process Steps</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Process Steps</span></h3>
     <div class="text-sm space-y-2">
       <div>1. <strong>Create branch</strong> from main</div>
       <div>2. <strong>Develop</strong> feature with commits</div>
@@ -483,7 +483,7 @@ transition: fade-out
       <div>5. <strong>Deploy</strong> from branch for testing</div>
       <div>6. <strong>Merge</strong> to main after approval</div>
     </div>
-    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
         # Create feature branch<br>
@@ -529,7 +529,7 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Branch Structure</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Branch Structure</span></h3>
     <div class="text-sm space-y-2">
       <div><strong>main:</strong> Production-ready releases only</div>
       <div><strong>develop:</strong> Integration branch for features</div>
@@ -537,7 +537,7 @@ transition: fade-out
       <div><strong>release/*:</strong> Release preparation and testing</div>
       <div><strong>hotfix/*:</strong> Critical production fixes</div>
     </div>
-    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Process</span></h3>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Workflow Process</span></h3>
     <div class="text-sm space-y-2">
       <div>1. <strong>Create feature branch</strong> from develop</div>
       <div>2. <strong>Develop & commit</strong> changes</div>
@@ -547,7 +547,7 @@ transition: fade-out
       <div>6. <strong>Merge to main</strong> and tag release</div>
       <div>7. <strong>Merge back</strong> to develop</div>
     </div> -->
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Best For</span></h3>
       <div class="text-sm space-y-1">
       <div>✅ Large development teams</div>
       <div>✅ Scheduled releases</div>
@@ -560,7 +560,7 @@ transition: fade-out
   </div>
   
   <div>
-    <div class="flex justify-center mb-4">
+    <div class="flex justify-center mb-2">
       <img src="https://nvie.com/img/git-model@2x.png" alt="Git Flow Diagram" class="w-80 h-auto rounded-lg shadow-lg" />
         </div>
   </div>
@@ -614,14 +614,14 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Environment Branches</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Environment Branches</span></h3>
     <div class="text-sm space-y-2">
       <div><strong>main:</strong> Development integration</div>
       <div><strong>staging:</strong> Pre-production testing</div>
       <div><strong>production:</strong> Live environment</div>
       <div><strong>feature/*:</strong> Feature development</div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Best For</span></h3>
     <div class="text-sm space-y-1">
       <div>✅ Multiple environments</div>
       <div>✅ Staged deployments</div>
@@ -631,7 +631,7 @@ transition: fade-out
       <div>❌ Simple continuous deployment</div>
       <div>❌ Small teams with single environment</div>
     </div>
-    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Deployment Flow</span></h3>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Deployment Flow</span></h3>
     <div class="text-sm space-y-2">
       <div>1. <strong>Develop</strong> in feature branches</div>
       <div>2. <strong>Merge</strong> to main after review</div>
@@ -640,7 +640,7 @@ transition: fade-out
       <div>5. <strong>Merge</strong> staging to production</div>
       <div>6. <strong>Deploy</strong> to production</div>
     </div> -->
-    <!-- <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
         # Feature development<br>
@@ -711,7 +711,7 @@ gitGraph:
   commit id: "Deploy UI" tag: "v1.1"
 ```
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Release Types</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Release Types</span></h3>
     <div class="text-sm space-y-1">
       <div>🔄 <strong>Environment promotion:</strong> Standard flow</div>
       <div>🚀 <strong>Release branches:</strong> For versioned releases</div>
@@ -832,7 +832,7 @@ transition: fade-out
   </div>
   
   <div class="flex flex-col justify-center">
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Essential Git Commands</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Essential Git Commands</span></h3>
     <div class="bg-gray-100 p-4 rounded font-mono text-sm">
       <div class="text-green-600"># Basic workflow</div>
       <div>git add &lt;file&gt;</div>
@@ -1155,7 +1155,7 @@ transition: fade-out
         git revert -m 1 abc123
       </div>
     </div>
-    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+    <div class="bg-blue-50 p-4 rounded-lg mb-2">
       <h4 class="font-bold text-blue-600 mb-3">🎯 When to Use Each</h4>
       <div class="text-sm space-y-2">
         <div><strong>git restore:</strong> Fix working directory mistakes</div>
@@ -1186,13 +1186,13 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Commit Message Structure</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Commit Message Structure</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
       git commit -m "&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;"
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Commit Types</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Commit Types</span></h3>
     <div class="grid grid-cols-2 gap-4">
       <div class="text-sm space-y-1">
         <div><strong>feat:</strong> New feature</div>
@@ -1206,7 +1206,7 @@ transition: fade-out
         <div><strong>chore:</strong> Maintenance</div>
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Quick Tips</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Quick Tips</span></h3>
     <div class="text-sm space-y-1">
       <div>📝 Use imperative mood: "add" not "added"</div>
       <div>📏 Keep subject under 50 characters</div>
@@ -1214,7 +1214,7 @@ transition: fade-out
     </div>
   </div>
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Good Examples</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Good Examples</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-green-100 p-2 rounded font-mono text-xs">
       feat(auth): add OAuth integration<br><br>
@@ -1223,7 +1223,7 @@ transition: fade-out
       refactor(utils): simplify date formatting
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bad Examples</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Bad Examples</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-red-100 p-2 rounded font-mono text-xs">
       ❌ update stuff<br>
@@ -1234,64 +1234,6 @@ transition: fade-out
     </div>
   </div>
 </div>
-
----
-transition: fade-out
----
-
-# Pull Request Best Practices
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Creating PRs</span></h3>
-    <div class="text-sm space-y-2">
-      <div>📝 <strong>Write descriptive titles</strong> that explain the change</div>
-      <div>📋 <strong>Use PR templates</strong> for consistent information</div>
-      <div>🎯 <strong>Keep PRs small and focused</strong> (< 400 lines)</div>
-      <div>🔗 <strong>Link to related issues</strong> or work items</div>
-      <div>📸 <strong>Include screenshots</strong> for UI changes</div>
-      <div>✅ <strong>Self-review before submitting</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Review Process</span></h3>
-    <div class="text-sm space-y-2">
-      <div>👀 <strong>Review promptly</strong> (within 24 hours)</div>
-      <div>🎯 <strong>Focus on logic, not style</strong> (use automated tools)</div>
-      <div>💬 <strong>Provide constructive feedback</strong></div>
-      <div>🔒 <strong>Check for security issues</strong></div>
-      <div>📚 <strong>Verify documentation updates</strong></div>
-      <div>🧪 <strong>Ensure adequate test coverage</strong></div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">PR Description Template</span></h3>
-      <div class="text-sm space-y-2">
-        <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        ## What changed?<br>
-        Brief summary of the changes<br><br>
-        ## Why?<br>
-        Explain the motivation and context<br><br>
-        ## How to test?<br>
-        - Step 1: Do this<br>
-        - Step 2: Verify that<br><br>
-        ## Checklist<br>
-        - [ ] Tests added/updated<br>
-        - [ ] Documentation updated<br>
-        - [ ] Breaking changes noted
-        </div>
-      </div>
-      <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Additional Resources</span></h3>
-      <div class="text-sm space-y-2">
-        <ul class="space-y-1">
-        <li><a href="https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Azure DevOps Pull Requests Documentation</a></li>
-        <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank" class="text-blue-600 hover:text-blue-800 underline">GitHub Pull Request Creation Guide</a></li>
-        </ul>
-      </div>
-
-  </div>
-</div>
-
-
 
 <style>
 .text-highlight {
@@ -1309,7 +1251,195 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Git Conflict (scenario)
+# Pull Request Best Practices (Creating a PR)
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Creating PRs</span></h3>
+    <div class="text-sm space-y-2">
+      <div>📝 <strong>Write descriptive titles</strong> that explain the change</div>
+      <div>📋 <strong>Use PR templates</strong> for consistent information</div>
+      <div>🎯 <strong>Keep PRs small and focused</strong> (< 400 lines)</div>
+      <div>🔗 <strong>Link to related issues</strong> or work items</div>
+      <div>📸 <strong>Include screenshots</strong> for UI changes</div>
+      <div>✅ <strong>Self-review before submitting</strong></div>
+    </div>
+      <h3 class="text-lg font-bold mb-2 mt-4"><span class="text-highlight">Useful Resources</span></h3>
+      <div class="text-sm space-y-2">
+        <ul class="space-y-1">
+          <li><a href="https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Azure DevOps Pull Requests Documentation</a></li>
+          <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" target="_blank" class="text-blue-600 hover:text-blue-800 underline">GitHub Pull Request Creation Guide</a></li>
+        </ul>
+      </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">PR Description Template</span></h3>
+      <div class="text-sm space-y-2">
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        ## What changed?<br>
+        Brief summary of the changes<br><br>
+        ## Why?<br>
+        Explain the motivation and context<br><br>
+        ## How to test?<br>
+        - Step 1: Do this<br>
+        - Step 2: Verify that<br><br>
+        ## Checklist<br>
+        - [ ] Tests added/updated<br>
+        - [ ] Documentation updated<br>
+        - [ ] Breaking changes noted
+        </div>
+      </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Pull Request Best Practices (Reviewing a PR)
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Effective PR Reviews</span></h3>
+    <div class="text-sm space-y-2">
+      <div>⏰ <strong>Review promptly</strong> (within 24 hours)</div>
+      <div>🎯 <strong>Focus on logic and architecture</strong> over style</div>
+      <div>🔍 <strong>Check for security vulnerabilities</strong></div>
+      <div>🧪 <strong>Verify test coverage and quality</strong></div>
+      <div>📚 <strong>Ensure documentation is updated</strong></div>
+      <div>🏗️ <strong>Validate design patterns</strong></div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Review Workflow</span></h3>
+    <div class="text-sm space-y-2">
+      <div>1. <strong>Understand the context</strong> - read PR description</div>
+      <div>2. <strong>Check automated tests</strong> - ensure CI passes</div>
+      <div>3. <strong>Review code changes</strong> - line by line</div>
+      <div>4. <strong>Test locally</strong> if needed</div>
+      <div>5. <strong>Provide constructive feedback</strong></div>
+      <div>6. <strong>Approve or request changes</strong></div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Comment Guidelines</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-green-100 p-2 rounded">
+        <div class="font-bold text-green-600">✅ Good Feedback:</div>
+        <div class="text-xs">"Consider using Promise.all() here to run API calls in parallel for better performance"</div>
+      </div>
+      <div class="bg-blue-100 p-2 rounded">
+        <div class="font-bold text-blue-600">💡 Suggestions:</div>
+        <div class="text-xs">"Nitpick: Could we extract this logic into a utility function for reusability?"</div>
+      </div>
+      <div class="bg-red-100 p-2 rounded">
+        <div class="font-bold text-red-600">❌ Avoid:</div>
+        <div class="text-xs">"This is wrong" or "Bad code"</div>
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Review Checklist</span></h3>
+    <div class="text-sm space-y-1">
+      <div>🔒 <strong>Security:</strong> No exposed secrets, proper validation</div>
+      <div>🏗️ <strong>Architecture:</strong> Follows team patterns</div>
+      <div>📈 <strong>Performance:</strong> No obvious bottlenecks</div>
+      <div>🧹 <strong>Code Quality:</strong> Readable and maintainable</div>
+      <div>🧪 <strong>Testing:</strong> Adequate coverage</div>
+      <div>📖 <strong>Documentation:</strong> Updated as needed</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Pull Request Best Practices (Merging a PR)
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Before Merging Checklist</span></h3>
+    <div class="text-sm space-y-2">
+      <div>✅ <strong>All required approvals received</strong></div>
+      <div>✅ <strong>All automated checks pass</strong></div>
+      <div>✅ <strong>No merge conflicts</strong></div>
+      <div>✅ <strong>Branch is up to date</strong></div>
+      <div>✅ <strong>Linked work items updated</strong></div>
+      <div>✅ <strong>Documentation reviewed</strong></div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-4"><span class="text-highlight">Post-Merge Actions</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🗑️ <strong>Delete feature branch</strong> (if no longer needed)</div>
+      <div>📊 <strong>Monitor deployment pipeline</strong></div>
+      <div>🔍 <strong>Verify changes in staging/production</strong></div>
+      <div>📝 <strong>Update project documentation</strong></div>
+      <div>🏷️ <strong>Close related issues</strong></div>
+      <div>📢 <strong>Notify stakeholders</strong> if needed</div>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Merge Strategy Selection</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-blue-100 p-2 rounded">
+        <div class="font-bold text-blue-600">🔗 Use Merge Commit when:</div>
+        <div class="text-xs">• You want to preserve feature branch context</div>
+        <div class="text-xs">• Working with long-running feature branches</div>
+      </div>
+      <div class="bg-green-100 p-2 rounded">
+        <div class="font-bold text-green-600">🎯 Use Squash Merge when:</div>
+        <div class="text-xs">• You want clean, linear history</div>
+        <div class="text-xs">• Feature has many small commits</div>
+      </div>
+      <div class="bg-purple-100 p-2 rounded">
+        <div class="font-bold text-purple-600">⚡ Use Rebase Merge when:</div>
+        <div class="text-xs">• Commits are already clean and meaningful</div>
+        <div class="text-xs">• You want to maintain commit history</div>
+      </div>
+    </div>
+    <img src="https://mattrickard.com/static/image/squash-merge-or-rebase/1.webp" alt="Squash Merge or Rebase" class="mt-4">
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Git Merge Conflict - After Commit
 
 🧪 Example Scenario
 
@@ -1338,7 +1468,7 @@ fatal: Need to specify how to reconcile divergent branches.
 transition: fade-out
 ---
 
-# Git Conflict (`--no-rebase`)
+# Git Merge Conflict - After Commit (`--no-rebase`)
 
 🧪 Example Scenario
 
@@ -1367,7 +1497,7 @@ Result:
 transition: fade-out
 ---
 
-# Git Conflict (`--rebase`)
+# Git Merge Conflict - After Commit (`--rebase`)
 
 🧪 Example Scenario
 
@@ -1391,7 +1521,7 @@ Result:
 transition: fade-out
 ---
 
-# Git Conflict (`--ff-only`)
+# Git Merge Conflict - After Commit (`--ff-only`)
 
 🧪 Example Scenario
 
@@ -1416,18 +1546,75 @@ Result:
 transition: fade-out
 ---
 
-# Git Conflict (summary)
+# Git Merge Conflict - After Commit (conflict resolution)
 
+<div class="grid gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Resolution Process</span></h3>
+    <div class="text-sm space-y-3">
+      <div>
+        <strong>1. Identify Conflicts:</strong>
+        <div class="mt-1">Git marks files with conflicts using special markers:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+          Your changes<br>
+          =======<br>
+          Incoming changes<br>
+          &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
+        </div>
+      </div>
+      <div>
+        <strong>2. Edit Files:</strong>
+        <div class="mt-1">Manually edit files to resolve conflicts. Choose which changes to keep or combine both.</div>
+      </div>
+      <div>
+        <strong>3. Mark as Resolved:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git add &lt;file&gt;
+        </div>
+      </div>
+      <div>
+        <strong>4. Continue Merge:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git commit
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div>
+    <div class="flex justify-center items-start">
+      <img src="./src/git%20conflict.png" alt="Git Conflict Example" class="max-w-full h-auto rounded-lg shadow-lg" />
+    </div>
+  </div> -->
+</div>
 
-<div class="grid grid-cols-1 gap-8 p-8">
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Git Merge Conflict - After Commit (summary)
+
+<div class="grid grid-cols-1 gap-8">
   <div class="overflow-x-auto">
-    <table class="w-full text-sm border-collapse border border-gray-300">
-      <thead>
+    <table class="w-full text-sm border-collapse border border-gray-300">    <thead>
         <tr class="bg-gray-100">
           <th class="border border-gray-300 p-3 text-left font-bold">Aspect</th>
-          <th class="border border-gray-300 p-3 text-left font-bold text-blue-600">--no-rebase</th>
-          <th class="border border-gray-300 p-3 text-left font-bold text-green-600">--rebase</th>
-          <th class="border border-gray-300 p-3 text-left font-bold text-purple-600">--ff-only</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-blue-600">🎯 --no-rebase</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-green-600">🧹 --rebase</th>
+          <th class="border border-gray-300 p-3 text-left font-bold text-purple-600">🛡️ --ff-only</th>
         </tr>
       </thead>
       <tbody>
@@ -1461,118 +1648,87 @@ transition: fade-out
           <td class="border border-gray-300 p-3">Rewrites history, can cause issues if commits are public</td>
           <td class="border border-gray-300 p-3">Will fail if you have any local commits</td>
         </tr> -->
-        <tr>
+        <!-- <tr>
           <td class="border border-gray-300 p-3 font-semibold">👥 Team Impact</td>
           <td class="border border-gray-300 p-3">Safe for shared repositories</td>
           <td class="border border-gray-300 p-3">Avoid if commits are already pushed/shared</td>
           <td class="border border-gray-300 p-3">Safe, prevents accidental merges</td>
+        </tr> -->
+        <tr class="bg-yellow-50">
+          <td class="border border-gray-300 p-3 font-semibold text-yellow-600 mb-3">💡 Recommendation</td>
+          <td class="border border-gray-300 p-3">Safe for most situations, preserves history</td>
+          <td class="border border-gray-300 p-3">Use for feature branches to maintain clean history</td>
+          <td class="border border-gray-300 p-3">Use in CI/CD or when you want to ensure no merge commits</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
-<div class="mt-6 bg-yellow-50 p-4 rounded-lg">
-  <h4 class="font-bold text-yellow-600 mb-3">💡 Recommendation</h4>
+
+
+---
+transition: fade-out
+---
+
+# Git Merge Conflict - Unstaged Changes
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Common Scenarios</span></h3>
+    <div class="text-sm space-y-3">
+      <div class="bg-yellow-50 p-3 rounded-lg">
+        <div class="font-bold text-yellow-600 mb-2">⚠️ Uncommitted Changes + Merge</div>
+        <div>You have uncommitted changes in your working directory and attempt to merge another branch. Git will prevent the merge and prompt you to resolve the conflicts.</div>
+      </div>
+      <div class="bg-orange-50 p-3 rounded-lg">
+        <div class="font-bold text-orange-600 mb-2">🔀 Uncommitted Changes + Branch Switch</div>
+        <div>You have uncommitted changes and checkout another branch, which may lead to conflicts if the changes overlap with the target branch.</div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Resolution Steps</span></h3>
+    <div class="text-sm space-y-3">
+      <div>
+        <strong class="text-blue-600">1. Stash Changes:</strong>
+        <div class="mt-1">Temporarily save your uncommitted changes:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git stash
+        </div>
+      </div>
+      <div>
+        <strong class="text-green-600">2. Perform Merge:</strong>
+        <div class="mt-1">Merge the target branch:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git pull &lt;target-branch&gt;
+        </div>
+      </div>
+      <div>
+        <strong class="text-purple-600">3. Apply Stashed Changes:</strong>
+        <div class="mt-1">Reapply your stashed changes:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git stash pop
+        </div>
+      </div>
+      <div>
+        <strong class="text-red-600">4. Resolve Conflicts:</strong>
+        <div class="mt-1">Follow the usual conflict resolution steps.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="mt-6 bg-blue-50 p-4 rounded-lg">
+  <h4 class="font-bold text-blue-600 mb-3">💡 Pro Tips</h4>
   <div class="text-sm space-y-2">
-    <div>🎯 <strong>Default (--no-rebase):</strong> Safe for most situations, preserves history</div>
-    <div>🧹 <strong>--rebase:</strong> Use for feature branches to maintain clean history</div>
-    <div>🛡️ <strong>--ff-only:</strong> Use in CI/CD or when you want to ensure no merge commits</div>
+    <div>• Use <strong>git stash push -m "description"</strong> to add a message to your stash</div>
+    <div>• Use <strong>git stash list</strong> to see all your stashes</div>
+    <div>• Use <strong>git stash apply</strong> instead of <strong>pop</strong> to keep the stash</div>
+    <div>• Consider committing your work instead of stashing for important changes</div>
   </div>
-</div>
-
-
-
----
-transition: fade-out
----
-
-# Common Scenario 1: Merge Conflict Resolution
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">When Conflicts Occur</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🔀 <strong>During merge:</strong> git merge feature-branch</div>
-      <div>⬇️ <strong>During pull:</strong> git pull origin main</div>
-      <div>🔄 <strong>During rebase:</strong> git rebase main</div>
-      <div>🍒 <strong>During cherry-pick:</strong> git cherry-pick abc123</div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Step-by-Step Resolution</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # 1. Check status<br>
-        git status<br><br>
-        # 2. Open conflicted files<br>
-        # Look for conflict markers:<br>
-        # &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
-        # Your changes<br>
-        # =======<br>
-        # Their changes<br>
-        # &gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name<br><br>
-        # 3. Edit and resolve<br>
-        # 4. Stage resolved files<br>
-        git add .<br><br>
-        # 5. Complete the merge<br>
-        git commit -m "resolve merge conflicts"
-      </div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Conflict Example</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-red-100 p-2 rounded font-mono text-xs">
-        <strong>Before resolution (app.js):</strong><br>
-        function calculateTotal(items) {<br>
-        &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
-        &nbsp;&nbsp;return items.reduce((sum, item) => sum + item.price, 0);<br>
-        =======<br>
-        &nbsp;&nbsp;let total = 0;<br>
-        &nbsp;&nbsp;for(let item of items) {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;total += item.price * item.quantity;<br>
-        &nbsp;&nbsp;}<br>
-        &nbsp;&nbsp;return total;<br>
-        &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/quantity-calculation<br>
-        }
-      </div>
-      <div class="bg-green-100 p-2 rounded font-mono text-xs">
-        <strong>After resolution:</strong><br>
-        function calculateTotal(items) {<br>
-        &nbsp;&nbsp;return items.reduce((sum, item) => {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;return sum + (item.price * (item.quantity || 1));<br>
-        &nbsp;&nbsp;}, 0);<br>
-        }
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Prevention Tips</span></h3>
-    <div class="text-sm space-y-2">
-      <div>📡 <strong>Pull frequently</strong> to stay updated</div>
-      <div>🔄 <strong>Rebase feature branches</strong> regularly</div>
-      <div>📦 <strong>Keep commits small</strong> and focused</div>
-      <div>🤝 <strong>Communicate</strong> about overlapping work</div>
-      <div>🧪 <strong>Use merge tools</strong> for complex conflicts</div>
-    </div>
-  </div>
-</div>
-
-<div class="mt-8 bg-blue-50 p-4 rounded-lg">
-  <h4 class="font-bold text-blue-600 mb-3">🛠️ Useful Merge Tools</h4>
-  <div class="grid grid-cols-3 gap-4 text-sm">
-    <div>
-      <div class="font-bold">VS Code</div>
-      <div class="text-xs">Built-in 3-way merge</div>
-    </div>
-    <div>
-      <div class="font-bold">GitKraken</div>
-      <div class="text-xs">Visual merge editor</div>
-    </div>
-    <div>
-      <div class="font-bold">Meld</div>
-      <div class="text-xs">Cross-platform tool</div>
-    </div>
-  </div>
-</div>
+</div> -->
 
 <style>
 .text-highlight {
@@ -1590,760 +1746,89 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Common Scenario 2: Conflict before checkout
-
-Happens when you try to switch branches while having uncommitted changes that conflict with the target branch.
-
-
-
-
-<!-- # Branching Strategies Overview
-
-<div class="grid grid-cols-3 gap-6">
-  <div class="bg-blue-50 p-4 rounded-lg">
-    <h3 class="font-bold text-blue-600 mb-3">🌊 Git Flow</h3>
-    <div class="text-sm space-y-1">
-      <div>Complex workflow with mutiple branch types📦</div>
-      <div>Sch</div>
-    </div>
-  </div>
-
-  <div class="bg-green-50 p-4 rounded-lg">
-    <h3 class="font-bold text-g🌿reen-600 mb-3">🚀 GitHub Flow</h3>
-    
-ntinuous deployment</div>
-      <div>Fast iterations</div>
-     📝 <div>Web appl
-ss="bg-purple-50 p-4 rounded-lg">
-    <h3 class="font-bold text-purple-600
-        echo "💾 Committing changes..."<br>ext-sm space-y-1">
-      <div>Environment-based branches</div>
-      <div>Staged deployments</div>
-      <div
-        echo "⬇️ Pulling latest changes..."<br>
-</div>
-
-<div class="mt-8 bg-yellow-50 p-4 rounded-lg">
-  <h3 class="font-bold text-yellow-600 mb-2">💡 Branch Naming Conventions</h3>
-  <div class="grid grid-cols-2 gap-4 text-sm">
-    <div>
-      <div class="font-mono bg-gray-100 p-1 rounded">feature/user-authentication</div>
-      <div class="font-mono bg-gray-100 p-1 rounded mt-1">bugfix/login-validation-error</div>
-      <div class="font-mono bg-gray-100 p-1 rounded mt-1">hotfix/security-patch-2024</div>
-    </div>
-    <div>
-      <div class="font-mono bg-gray-100 p-1 rounded">release/v2.1.0</div>
-      <div class="font-mono bg-gray-100 p-1 rounded mt-1">chore/update-dependencies</div>
-      <div class="font-mono bg-gray-100 p-1 rounded mt-1">docs/api-documentation</div>
-    </div>
-  </div>
-</div>
-
-# Git Flow Strategy
+# Advanced Technique: Interactive Staging
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Branch Structure</span></h3>
-    <div class="text-sm space-y-2">
-      <div><strong>main:</strong> Production-ready releases only</div>
-      <div><strong>develop:</strong> Integration branch for features</div>
-      <div><strong>feature/*:</strong> Individual feature development</div>
-      <div><strong>release/*:</strong> Release preparation and testing</div>
-      <div><strong>hotfix/*:</strong> Critical production fixes</div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Scenario</span></h3>
+    <div class="text-sm mb-2">
+      You want to commit specific lines of code from a file, not the entire file's changes.
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Example File Changes</span></h3>
     <div class="text-sm space-y-2">
+      <div><strong>Original `math.py`:</strong></div>
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Start new feature<br>
-        git checkout develop<br>
-        git checkout -b feature/user-dashboard<br><br>
-        # Finish feature<br>
-        git checkout develop<br>
-        git merge feature/user-dashboard<br>
-        git branch -d feature/user-dashboard<br><br>
-        # Create release<br>
-        git checkout -b release/v1.2.0 develop<br>
-        # After testing, merge to main and develop
+        def add(a, b):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return a + b<br><br>
+        def subtract(a, b):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return a - b
+      </div>
+      <div class="mt-3"><strong>Your changes:</strong></div>
+      <div class="bg-yellow-100 p-2 rounded font-mono text-xs">
+        def add(a, b):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return a - (-1 * b)  <span class="text-red-600"># Modified</span><br><br>
+        def subtract(a, b):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;return a + (-1 * b)  <span class="text-green-600"># Want to commit only this</span>
       </div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Git Flow Diagram</span></h3>
-    <div class="bg-white p-4 rounded border">
-```mermaid
----
-title: Git Flow Strategy Example
----
-gitGraph
-  commit id: "Initial"
-  commit id: "Setup"
-  branch develop
-  checkout develop
-  commit id: "Dev setup"
-  branch feature/auth
-  checkout feature/auth
-  commit id: "Add login"
-  commit id: "Add tests"
-  checkout develop
-  merge feature/auth
-  commit id: "Integrate auth"
-  branch release/v1.0
-  checkout release/v1.0
-  commit id: "Version bump"
-  commit id: "Bug fixes"
-  checkout main
-  merge release/v1.0
-  commit id: "Release v1.0" tag: "v1.0.0"
-  checkout develop
-  merge release/v1.0
-  branch hotfix/security
-  checkout hotfix/security
-  commit id: "Security fix"
-  checkout main
-  merge hotfix/security
-  commit id: "Hotfix deploy" tag: "v1.0.1"
-  checkout develop
-  merge hotfix/security
-```
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
-    <div class="text-sm space-y-1">
-      <div>✅ Large development teams</div>
-      <div>✅ Scheduled releases</div>
-      <div>✅ Complex feature development</div>
-      <div>✅ Multiple environments</div>
-      <div>❌ Continuous deployment</div>
-      <div>❌ Simple projects</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style> -->
-
----
-transition: fade-out
----
-
-# GitHub Flow Strategy
-
-<!-- <div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Simple Workflow</span></h3>
-    <div class="text-sm space-y-2">
-      <div><strong>main:</strong> Always deployable production code</div>
-      <div><strong>feature/*:</strong> All development work</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Process Steps</span></h3>
-    <div class="text-sm space-y-2">
-      <div>1. <strong>Create branch</strong> from main</div>
-      <div>2. <strong>Develop</strong> feature with commits</div>
-      <div>3. <strong>Open pull request</strong> early</div>
-      <div>4. <strong>Discuss & review</strong> code</div>
-      <div>5. <strong>Deploy</strong> from branch for testing</div>
-      <div>6. <strong>Merge</strong> to main after approval</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Create feature branch<br>
-        git checkout main<br>
-        git pull origin main<br>
-        git checkout -b feature/new-api<br><br>
-        # Develop and push<br>
-        git add .<br>
-        git commit -m "feat: add new API endpoint"<br>
-        git push origin feature/new-api<br><br>
-        # After PR approval<br>
-        git checkout main<br>
-        git pull origin main<br>
-        git branch -d feature/new-api
+    <!-- <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Interactive Staging Process</span></h3> -->
+    <div class="text-sm space-y-3">
+      <div>
+        <strong>1. Start Interactive Staging:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git add -p math.py
+        </div>
       </div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitHub Flow Diagram</span></h3>
-    <div class="bg-white p-4 rounded border">
-      
-```mermaid
-gitgraph:
-    options:
-        mainBranchName: main
-    commit id: "Initial"
-    commit id: "Setup"
-    branch feature/auth
-    checkout feature/auth
-    commit id: "Add auth"
-    commit id: "Add tests"
-    commit id: "Fix review"
-    checkout main
-    merge feature/auth
-    commit id: "Deploy" tag: "v1.1"
-    branch feature/dashboard
-    checkout feature/dashboard
-    commit id: "Add dashboard"
-    commit id: "Add styling"
-    checkout main
-    merge feature/dashboard
-    commit id: "Deploy" tag: "v1.2"
-    branch hotfix/bug
-    checkout hotfix/bug
-    commit id: "Fix critical bug"
-    checkout main
-    merge hotfix/bug
-    commit id: "Deploy" tag: "v1.2.1"
-```
-
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Advantages</span></h3>
-    <div class="text-sm space-y-1">
-      <div>✅ Simple and straightforward</div>
-      <div>✅ Continuous deployment friendly</div>
-      <div>✅ Fast feature delivery</div>
-      <div>✅ Easy to understand</div>
-      <div>✅ Great for web applications</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🎯 Continuous deployment</div>
-      <div>🎯 Small to medium teams</div>
-      <div>🎯 Web applications</div>
-      <div>🎯 SaaS products</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style> -->
-
----
-transition: fade-out
----
-
-# GitLab Flow Strategy
-
-<!-- <div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Environment Branches</span></h3>
-    <div class="text-sm space-y-2">
-      <div><strong>main:</strong> Development integration</div>
-      <div><strong>staging:</strong> Pre-production testing</div>
-      <div><strong>production:</strong> Live environment</div>
-      <div><strong>feature/*:</strong> Feature development</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Deployment Flow</span></h3>
-    <div class="text-sm space-y-2">
-      <div>1. <strong>Develop</strong> in feature branches</div>
-      <div>2. <strong>Merge</strong> to main after review</div>
-      <div>3. <strong>Deploy</strong> main to staging</div>
-      <div>4. <strong>Test</strong> in staging environment</div>
-      <div>5. <strong>Merge</strong> staging to production</div>
-      <div>6. <strong>Deploy</strong> to production</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Workflow Commands</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Feature development<br>
-        git checkout main<br>
-        git checkout -b feature/payment<br>
-        # ... develop feature ...<br>
-        git push origin feature/payment<br><br>
-        # After merge to main<br>
-        git checkout staging<br>
-        git merge main<br>
-        git push origin staging<br><br>
-        # After staging tests pass<br>
-        git checkout production<br>
-        git merge staging<br>
-        git push origin production
+      <div>
+        <strong>2. Review Each Hunk:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          @@ -1,2 +1,2 @@ def add(a, b):<br>
+          &nbsp;def add(a, b):<br>
+          -&nbsp;&nbsp;&nbsp;&nbsp;return a + b<br>
+          +&nbsp;&nbsp;&nbsp;&nbsp;return a - (-1 * b)<br><br>
+          (1/2) Stage this hunk [y,n,q,a,d,K,j,J,g,/,e,?]? <span class="text-red-600">n</span>
+        </div>
       </div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitLab Flow Diagram</span></h3>
-    <div class="bg-white p-4 rounded border">
-      
-```mermaid
-gitgraph:
-    options:
-        mainBranchName: main
-    commit id: "Initial"
-    branch staging
-    branch production
-    checkout main
-    commit id: "Setup"
-    branch feature/api
-    checkout feature/api
-    commit id: "Add API"
-    commit id: "Add tests"
-    checkout main
-    merge feature/api
-    commit id: "Integrate"
-    checkout staging
-    merge main
-    commit id: "Deploy staging"
-    checkout production
-    merge staging
-    commit id: "Deploy prod" tag: "v1.0"
-    checkout main
-    branch feature/ui
-    checkout feature/ui
-    commit id: "Add UI"
-    checkout main
-    merge feature/ui
-    checkout staging
-    merge main
-    commit id: "Test UI"
-    checkout production
-    merge staging
-    commit id: "Deploy UI" tag: "v1.1"
-```
-
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Release Types</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🔄 <strong>Environment promotion:</strong> Standard flow</div>
-      <div>🚀 <strong>Release branches:</strong> For versioned releases</div>
-      <div>🔧 <strong>Upstream first:</strong> For open source</div>
-    </div>
-    
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Best For</span></h3>
-    <div class="text-sm space-y-1">
-      <div>✅ Multiple environments</div>
-      <div>✅ Staged deployments</div>
-      <div>✅ Enterprise applications</div>
-      <div>✅ Quality gates</div>
-      <div>✅ Compliance requirements</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style> -->
-
----
-transition: fade-out
----
-
-# Commit Message Best Practices
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Conventional Commits</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        &lt;type&gt;[optional scope]: &lt;description&gt;<br><br>
-        [optional body]<br><br>
-        [optional footer(s)]
+      <div>
+        <strong>3. Select Desired Changes:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          @@ -4,2 +4,2 @@ def subtract(a, b):<br>
+          &nbsp;def subtract(a, b):<br>
+          -&nbsp;&nbsp;&nbsp;&nbsp;return a - b<br>
+          +&nbsp;&nbsp;&nbsp;&nbsp;return a + (-1 * b)<br><br>
+          (2/2) Stage this hunk [y,n,q,a,d,K,j,J,g,/,e,?]? <span class="text-green-600">y</span>
+        </div>
       </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Commit Types</span></h3>
-    <div class="text-sm space-y-1">
-      <div><strong>feat:</strong> New feature</div>
-      <div><strong>fix:</strong> Bug fix</div>
-      <div><strong>docs:</strong> Documentation changes</div>
-      <div><strong>style:</strong> Code formatting</div>
-      <div><strong>refactor:</strong> Code restructuring</div>
-      <div><strong>test:</strong> Adding tests</div>
-      <div><strong>chore:</strong> Maintenance tasks</div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Good Examples</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-green-100 p-2 rounded font-mono text-xs">
-        feat(auth): add OAuth 2.0 integration<br><br>
-        - Implement Google OAuth provider<br>
-        - Add user session management<br>
-        - Update login UI components<br><br>
-        Closes #123
-      </div>
-      <div class="bg-green-100 p-2 rounded font-mono text-xs">
-        fix(api): resolve timeout in user endpoint<br><br>
-        Increase timeout from 5s to 30s for large datasets
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bad Examples</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-red-100 p-2 rounded font-mono text-xs">
-        ❌ update stuff<br>
-        ❌ fix bug<br>
-        ❌ WIP<br>
-        ❌ final version
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# GitHub Best Practices
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Pull Request Workflow</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Create feature branch<br>
-        git checkout -b feature/new-dashboard<br><br>
-        # Make changes and commit<br>
-        git add .<br>
-        git commit -m "feat: add user dashboard"<br><br>
-        # Push and create PR<br>
-        git push origin feature/new-dashboard
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Templates</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        ## Description<br>
-        Brief description of changes<br><br>
-        ## Type of Change<br>
-        - [ ] Bug fix<br>
-        - [ ] New feature<br>
-        - [ ] Breaking change<br><br>
-        ## Testing<br>
-        - [ ] Unit tests pass<br>
-        - [ ] Integration tests pass
-      </div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitHub Actions Example</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        name: CI/CD Pipeline<br><br>
-        on:<br>
-        &nbsp;&nbsp;pull_request:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;branches: [ main ]<br>
-        &nbsp;&nbsp;push:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;branches: [ main ]<br><br>
-        jobs:<br>
-        &nbsp;&nbsp;test:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;steps:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- uses: actions/checkout@v3<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- name: Run tests<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run: npm test
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Issue Templates</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🐛 <strong>Bug Report Template</strong></div>
-      <div>✨ <strong>Feature Request Template</strong></div>
-      <div>❓ <strong>Question Template</strong></div>
-      <div>🔧 <strong>Task Template</strong></div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Azure DevOps Best Practices
-
-<div class="grid grid-cols-2 grid-rows-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Azure Repos Setup</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Clone Azure DevOps repo<br>
-        git clone https://dev.azure.com/org/project/_git/repo<br><br>
-        # Set up remote tracking<br>
-        git remote add origin https://dev.azure.com/org/project/_git/repo<br><br>
-        # Configure for Azure DevOps<br>
-        git config credential.helper manager-core
-      </div>
-    </div>
-    <div class="text-sm space-y-1">
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Branch Policies</span></h3>
-      <div>✅ Require minimum 2 reviewers</div>
-      <div>✅ Check for linked work items</div>
-      <div>✅ Require build validation</div>
-      <div>✅ Auto-complete after requirements met</div>
-      <div>✅ Squash merge for clean history</div>
-    </div>
-  </div>
-  
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Azure Pipelines YAML</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        trigger:<br>
-        - main<br>
-        - develop<br><br>
-        pr:<br>
-        - main<br><br>
-        pool:<br>
-        &nbsp;&nbsp;vmImage: 'ubuntu-latest'<br><br>
-        steps:<br>
-        - task: NodeTool@0<br>
-        &nbsp;&nbsp;inputs:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;versionSpec: '18.x'<br><br>
-        - script: npm ci<br>
-        &nbsp;&nbsp;displayName: 'Install dependencies'<br><br>
-        - script: npm test<br>
-        &nbsp;&nbsp;displayName: 'Run tests'
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Work Item Integration</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🔗 Link commits to work items</div>
-      <div>📋 Reference work items in PR descriptions</div>
-      <div>🎯 Use AB# prefix for automatic linking</div>
-      <div>✅ Close work items via commits</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Code Review Best Practices - Part 1
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Before Submitting PR</span></h3>
-    <div class="text-sm space-y-2">
-      <div>✅ <strong>Self-review your code</strong></div>
-      <div>✅ <strong>Run tests locally</strong></div>
-      <div>✅ <strong>Update documentation</strong></div>
-      <div>✅ <strong>Add meaningful commit messages</strong></div>
-      <div>✅ <strong>Keep PRs small and focused</strong></div>
-      <div>✅ <strong>Include screenshots for UI changes</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">PR Size Guidelines</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🟢 <strong>Small (< 200 lines):</strong> Easy to review thoroughly</div>
-      <div>🟡 <strong>Medium (200-400 lines):</strong> Acceptable with good structure</div>
-      <div>🔴 <strong>Large (> 400 lines):</strong> Consider breaking down</div>
-    </div>
-  </div>
-
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">PR Description Template</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        ## What changed?<br>
-        Brief summary of the changes<br><br>
-        ## Why?<br>
-        Explain the motivation and context<br><br>
-        ## How to test?<br>
-        Step-by-step testing instructions<br><br>
-        ## Screenshots<br>
-        Before/after images if applicable<br><br>
-        ## Checklist<br>
-        - [ ] Tests added/updated<br>
-        - [ ] Documentation updated<br>
-        - [ ] Breaking changes noted
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Code Review Best Practices - Part 2
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">During Code Review</span></h3>
-    <div class="text-sm space-y-2">
-      <div>👀 <strong>Review logic and architecture</strong></div>
-      <div>🔍 <strong>Check for security vulnerabilities</strong></div>
-      <div>📝 <strong>Verify code readability</strong></div>
-      <div>⚡ <strong>Assess performance impact</strong></div>
-      <div>🧪 <strong>Ensure adequate test coverage</strong></div>
-      <div>📚 <strong>Validate documentation updates</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Review Checklist</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🔒 Security: No secrets, proper validation</div>
-      <div>🏗️ Architecture: Follows patterns, proper separation</div>
-      <div>🧹 Clean Code: Readable, maintainable, documented</div>
-      <div>🎯 Functionality: Meets requirements, edge cases</div>
-      <div>📈 Performance: No obvious bottlenecks</div>
-    </div>
-  </div>
-
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Review Comments</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-green-100 p-2 rounded">
-        <div class="font-bold text-green-600">✅ Good:</div>
-        <div>"Consider using a Map here for O(1) lookup instead of Array.find() for better performance with large datasets"</div>
-      </div>
-      <div class="bg-red-100 p-2 rounded">
-        <div class="font-bold text-red-600">❌ Bad:</div>
-        <div>"This is wrong"</div>
-      </div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Comment Types</span></h3>
-    <div class="text-sm space-y-1">
-      <div>🔴 <strong>Must Fix:</strong> Blocking issues</div>
-      <div>🟡 <strong>Should Fix:</strong> Important improvements</div>
-      <div>🟢 <strong>Consider:</strong> Suggestions</div>
-      <div>💡 <strong>Nitpick:</strong> Style preferences</div>
-      <div>👍 <strong>Praise:</strong> Acknowledge good work</div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Code Review Best Practices - Part 3
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Review Process Flow</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded">
-        <div class="font-mono text-xs">
-          1. Developer creates PR<br>
-          2. Automated checks run<br>
-          3. Reviewers assigned<br>
-          4. Review & feedback<br>
-          5. Address comments<br>
-          6. Re-review if needed<br>
-          7. Approve & merge
+      <div>
+        <strong>4. Commit Selected Changes:</strong>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git commit -m "refactor: improve subtract function implementation"
         </div>
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Time Management</span></h3>
-    <div class="text-sm space-y-2">
-      <div>⏱️ <strong>Review within 24 hours</strong></div>
-      <div>🎯 <strong>Focus on high-impact changes first</strong></div>
-      <div>📅 <strong>Schedule dedicated review time</strong></div>
-      <div>🔄 <strong>Batch similar reviews together</strong></div>
-    </div>
-  </div>
-
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Tools & Automation</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🤖 <strong>Automated linting and formatting</strong></div>
-      <div>🧪 <strong>Continuous integration tests</strong></div>
-      <div>🔍 <strong>Static analysis tools</strong></div>
-      <div>📊 <strong>Code coverage reports</strong></div>
-      <div>🛡️ <strong>Security scanning</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Team Culture</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🤝 <strong>Foster learning environment</strong></div>
-      <div>💬 <strong>Encourage questions</strong></div>
-      <div>🎓 <strong>Share knowledge actively</strong></div>
-      <div>🏆 <strong>Celebrate good practices</strong></div>
-      <div>🔄 <strong>Continuous improvement mindset</strong></div>
-    </div>
   </div>
 </div>
+
+<!-- <div class="mt-8 bg-blue-50 p-4 rounded-lg">
+  <h4 class="font-bold text-blue-600 mb-3">🎛️ Interactive Staging Options</h4>
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div>
+      <div><strong>y</strong> - stage this hunk</div>
+      <div><strong>n</strong> - do not stage this hunk</div>
+      <div><strong>q</strong> - quit; do not stage this or remaining hunks</div>
+      <div><strong>a</strong> - stage this and all remaining hunks</div>
+    </div>
+    <div>
+      <div><strong>d</strong> - do not stage this or remaining hunks</div>
+      <div><strong>s</strong> - split the current hunk into smaller hunks</div>
+      <div><strong>e</strong> - manually edit the current hunk</div>
+      <div><strong>?</strong> - print help</div>
+    </div>
+  </div>
+</div> -->
 
 <style>
 .text-highlight {
@@ -2361,132 +1846,135 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Advanced Git Techniques
+# Advanced Technique: Cherry-Picking Commits
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Interactive Rebase</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Clean up commit history<br>
-        git rebase -i HEAD~3<br><br>
-        # Options:<br>
-        # pick - keep commit<br>
-        # squash - combine with previous<br>
-        # edit - modify commit<br>
-        # drop - remove commit
-      </div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Scenario</span></h3>
+    <div class="text-sm mb-2">
+      You want to apply a specific commit from one branch to another without merging the entire branch.
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Hooks</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">When to Use Cherry-Pick</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🔧 <strong>Hotfixes:</strong> Apply critical fixes to multiple branches</div>
+      <div>📦 <strong>Feature extraction:</strong> Move specific commits to different branches</div>
+      <div>🔄 <strong>Backporting:</strong> Apply patches to older release branches</div>
+      <div>🎯 <strong>Selective merging:</strong> Choose specific changes without full merge</div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Example Workflow</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # .git/hooks/pre-commit<br>
-        #!/bin/sh<br>
-        npm run lint<br>
-        npm run test<br><br>
-        # .git/hooks/commit-msg<br>
-        #!/bin/sh<br>
-        # Validate commit message format<br>
-        npx commitlint --edit $1
+        # Identify commit to cherry-pick<br>
+        git log --oneline feature/new-api<br>
+        # Switch to target branch<br>
+        git checkout main<br>
+        # Apply specific commit<br>
+        git cherry-pick abc123f
       </div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Cherry-picking</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Cherry-Pick Process</span></h3>
+    <div class="text-sm space-y-3">
+      <div>
+        <strong class="text-blue-600">1. Identify Commit:</strong>
+        <div class="mt-1">Find the commit hash you want to cherry-pick:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git log --oneline<br>
+          git show &lt;commit-hash&gt;  # Preview changes
+        </div>
+      </div>
+      <div>
+        <strong class="text-green-600">2. Checkout Target Branch:</strong>
+        <div class="mt-1">Switch to the branch where you want to apply the commit:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git checkout &lt;target-branch&gt;
+        </div>
+      </div>
+      <div>
+        <strong class="text-purple-600">3. Cherry-Pick Commit:</strong>
+        <div class="mt-1">Apply the specific commit:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git cherry-pick &lt;commit-hash&gt;
+        </div>
+      </div>
+      <div>
+        <strong class="text-red-600">4. Resolve Conflicts (if any):</strong>
+        <div class="mt-1">If there are conflicts, resolve them and continue:</div>
+        <div class="bg-gray-100 p-2 rounded font-mono text-xs mt-1">
+          git cherry-pick --continue<br>
+          # Or abort if needed<br>
+          git cherry-pick --abort
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+<!--# Cherry-Pick: Advanced Options & Best Practices
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Advanced Cherry-Pick Options</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Apply specific commit to current branch<br>
-        git cherry-pick &lt;commit-hash&gt;<br><br>
-        # Apply multiple commits<br>
-        git cherry-pick A..B<br><br>
+        # Cherry-pick multiple commits<br>
+        git cherry-pick abc123f def456g<br><br>
         # Cherry-pick without committing<br>
-        git cherry-pick --no-commit &lt;hash&gt;
+        git cherry-pick --no-commit abc123f<br><br>
+        # Cherry-pick with custom message<br>
+        git cherry-pick -e abc123f<br><br>
+        # Cherry-pick range of commits<br>
+        git cherry-pick abc123f..def456g
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Bisect for Debugging</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Remote Cherry-Pick</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Start bisect session<br>
-        git bisect start<br>
-        git bisect bad HEAD<br>
-        git bisect good &lt;known-good-commit&gt;<br><br>
-        # Git will checkout middle commit<br>
-        # Test and mark as good/bad<br>
-        git bisect good  # or git bisect bad<br><br>
-        # Finish when bug is found<br>
-        git bisect reset
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-.text-highlight {
-  background-color: #2B90B6;
-  background-size: 100%;
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
----
-transition: fade-out
----
-
-# Security & Compliance
-
-<div class="grid grid-cols-2 gap-8">
-  <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Secure Practices</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🔐 <strong>Never commit secrets</strong></div>
-      <div>🎯 <strong>Use .gitignore for sensitive files</strong></div>
-      <div>🔑 <strong>Use SSH keys or Personal Access Tokens</strong></div>
-      <div>🛡️ <strong>Enable 2FA on all accounts</strong></div>
-      <div>🔍 <strong>Scan for secrets in commits</strong></div>
-      <div>📝 <strong>Sign commits with GPG</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Secret Scanning</span></h3>
-    <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Install git-secrets<br>
-        brew install git-secrets<br><br>
-        # Set up for repository<br>
-        git secrets --install<br>
-        git secrets --register-aws<br><br>
-        # Scan commits<br>
-        git secrets --scan
+        # Cherry-pick from different remote<br>
+        git cherry-pick origin/feature-branch~2<br><br>
+        # Cherry-pick and sign off<br>
+        git cherry-pick -s abc123f<br><br>
+        # Preview changes before applying<br>
+        git show abc123f
       </div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Compliance & Audit</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Best Practices & Warnings</span></h3>
     <div class="text-sm space-y-2">
-      <div>📊 <strong>Enable audit logging</strong></div>
-      <div>👥 <strong>Track contributor activity</strong></div>
-      <div>🔒 <strong>Enforce branch protection rules</strong></div>
-      <div>📋 <strong>Maintain compliance documentation</strong></div>
-      <div>🔄 <strong>Regular access reviews</strong></div>
-      <div>📈 <strong>Monitor repository metrics</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">GitHub Security Features</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🔍 <strong>Dependabot alerts</strong></div>
-      <div>🛡️ <strong>Security advisories</strong></div>
-      <div>🔐 <strong>Secret scanning</strong></div>
-      <div>📝 <strong>Code scanning with CodeQL</strong></div>
-      <div>🎯 <strong>Dependency review</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Security</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🔑 <strong>Azure AD integration</strong></div>
-      <div>🛡️ <strong>Conditional access policies</strong></div>
-      <div>📊 <strong>Audit trail and reporting</strong></div>
+      <div class="bg-yellow-50 p-3 rounded-lg">
+        <div class="font-bold text-yellow-600 mb-2">⚠️ Use Carefully</div>
+        <div>• Cherry-picking creates duplicate commits</div>
+        <div>• Can make history confusing if overused</div>
+        <div>• May cause conflicts when merging later</div>
+      </div>
+      <div class="bg-green-50 p-3 rounded-lg">
+        <div class="font-bold text-green-600 mb-2">✅ Good Use Cases</div>
+        <div>• Emergency hotfixes across branches</div>
+        <div>• Backporting specific features</div>
+        <div>• Moving commits between branches</div>
+      </div>
+      <div class="bg-blue-50 p-3 rounded-lg">
+        <div class="font-bold text-blue-600 mb-2">💡 Pro Tips</div>
+        <div>• Test cherry-picked changes thoroughly</div>
+        <div>• Document why you cherry-picked</div>
+        <div>• Consider rebase for cleaner history</div>
+      </div>
     </div>
   </div>
 </div>
@@ -2501,67 +1989,55 @@ transition: fade-out
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-</style>
+</style> -->
 
 ---
 transition: fade-out
 ---
 
-# Release Management
+# Git Submodules - Introduction
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Semantic Versioning</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">What are Submodules?</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono">
-        <div class="text-center text-lg">MAJOR.MINOR.PATCH</div>
-        <div class="text-center text-lg">2.1.3</div>
-      </div>
-      <div>🔴 <strong>MAJOR:</strong> Breaking changes</div>
-      <div>🟡 <strong>MINOR:</strong> New features (backward compatible)</div>
-      <div>🟢 <strong>PATCH:</strong> Bug fixes</div>
+      <div>📦 <strong>Include external repositories</strong> as subdirectories</div>
+      <div>🔗 <strong>Maintain separate version control</strong> for each repository</div>
+      <div>🎯 <strong>Pin to specific commits</strong> for reproducible builds</div>
+      <div>🔄 <strong>Share common code</strong> across multiple projects</div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Tags</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Common Use Cases</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Create annotated tag<br>
-        git tag -a v2.1.0 -m "Release version 2.1.0"<br><br>
-        # Push tags to remote<br>
-        git push origin --tags<br><br>
-        # List tags<br>
-        git tag -l
-      </div>
+      <div>📚 <strong>Shared libraries:</strong> Common utilities across projects</div>
+      <div>🎨 <strong>Theme/template systems:</strong> Reusable UI components</div>
+      <div>🔧 <strong>Configuration repos:</strong> Shared config files</div>
+      <div>📖 <strong>Documentation:</strong> Centralized docs repository</div>
+      <div>🧪 <strong>Test frameworks:</strong> Shared testing utilities</div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">GitHub Releases</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Basic Commands</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Using GitHub CLI<br>
-        gh release create v2.1.0 \<br>
-        &nbsp;&nbsp;--title "Version 2.1.0" \<br>
-        &nbsp;&nbsp;--notes "## What's New<br>
-        &nbsp;&nbsp;- Feature A<br>
-        &nbsp;&nbsp;- Bug fix B" \<br>
-        &nbsp;&nbsp;dist/*
+        # Add a submodule<br>
+        git submodule add https://github.com/user/shared-lib.git lib/shared<br><br>
+        # Clone repo with submodules<br>
+        git clone --recursive https://github.com/user/main-repo.git<br><br>
+        # Initialize existing submodules<br>
+        git submodule init<br>
+        git submodule update
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Azure DevOps Releases</span></h3>
-    <div class="text-sm space-y-2">
-      <div>🚀 <strong>Release pipelines</strong></div>
-      <div>🎯 <strong>Multi-stage deployments</strong></div>
-      <div>✅ <strong>Approval gates</strong></div>
-      <div>📋 <strong>Release notes automation</strong></div>
-      <div>🔄 <strong>Rollback strategies</strong></div>
-    </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Changelog Automation</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Repository Structure</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Generate changelog<br>
-        npx conventional-changelog-cli -p angular -i CHANGELOG.md -s<br><br>
-        # With release automation<br>
-        npx semantic-release
+        my-project/<br>
+        ├── .gitmodules       # Submodule configuration<br>
+        ├── lib/<br>
+        │   └── shared/       # Submodule directory<br>
+        ├── src/<br>
+        └── README.md
       </div>
     </div>
   </div>
@@ -2583,62 +2059,59 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Common Git Problems & Solutions
+# Git Submodules - Management & Best Practices
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Merge Conflicts</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Advanced Submodule Operations</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # When merge conflict occurs<br>
-        git status  # See conflicted files<br><br>
-        # Edit files to resolve conflicts<br>
-        # Look for &lt;&lt;&lt;&lt;&lt;&lt;&lt; markers<br><br>
-        # After resolving<br>
-        git add .<br>
-        git commit -m "resolve merge conflicts"
+        # Update all submodules to latest<br>
+        git submodule update --remote<br>
+        # Update specific submodule<br>
+        git submodule update --remote lib/shared<br>
+        # Remove a submodule<br>
+        git submodule deinit lib/shared<br>
+        git rm lib/shared<br>
+        # Check submodule status<br>
+        git submodule status
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Undo Changes</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-4"><span class="text-highlight">Best Practices</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Undo last commit (keep changes)<br>
-        git reset --soft HEAD~1<br><br>
-        # Undo last commit (discard changes)<br>
-        git reset --hard HEAD~1<br><br>
-        # Undo specific file<br>
-        git checkout -- filename.js
-      </div>
+      <div>📌 <strong>Pin to specific commits</strong> for stability</div>
+      <div>📝 <strong>Document submodule purpose</strong> in README</div>
+      <div>🔄 <strong>Regular updates</strong> with testing</div>
+      <div>⚠️ <strong>Be cautious with nested submodules</strong></div>
+      <div>🎯 <strong>Consider alternatives</strong> like package managers</div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Large File Issues</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Challenges & Solutions</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Install Git LFS<br>
-        git lfs install<br><br>
-        # Track large files<br>
-        git lfs track "*.psd"<br>
-        git lfs track "*.zip"<br><br>
-        # Commit .gitattributes<br>
-        git add .gitattributes<br>
-        git commit -m "track large files with LFS"
+      <div class="bg-red-50 p-3 rounded-lg">
+        <div class="font-bold text-red-600 mb-2">⚠️ Common Issues</div>
+        <div>• Increased complexity for team members</div>
+        <div>• Easy to forget updating submodules</div>
+        <div>• Detached HEAD state can be confusing</div>
+        <div>• Merge conflicts in .gitmodules file</div>
+      </div>
+      <div class="bg-green-50 p-3 rounded-lg">
+        <div class="font-bold text-green-600 mb-2">✅ Solutions</div>
+        <div>• Automate with CI/CD hooks</div>
+        <div>• Use git aliases for common operations</div>
+        <div>• Clear team documentation</div>
+        <div>• Consider Git subtrees or package managers</div>
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Repository Cleanup</span></h3>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-4"><span class="text-highlight">Alternatives</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # Remove file from history<br>
-        git filter-branch --force --index-filter \<br>
-        'git rm --cached --ignore-unmatch secrets.env' \<br>
-        --prune-empty --tag-name-filter cat -- --all<br><br>
-        # Alternative with BFG<br>
-        java -jar bfg.jar --delete-files secrets.env<br>
-        git reflog expire --expire=now --all<br>
-        git gc --prune=now --aggressive
-      </div>
-    </div>
+      <div>📦 <strong>Package managers:</strong> npm, pip, Maven</div>
+      <div>🌳 <strong>Git subtrees:</strong> Simpler than submodules</div>
+      <div>🔗 <strong>Git worktrees:</strong> Multiple working trees</div>
+      <div>🐳 <strong>Containerization:</strong> Docker for dependencies</div>
+    </div> -->
   </div>
 </div>
 
@@ -2654,23 +2127,19 @@ transition: fade-out
 }
 </style>
 
----
-transition: fade-out
----
-
-# Performance & Optimization
+<!-- # Performance & Optimization
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Repository Performance</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Repository Performance</span></h3>
     <div class="text-sm space-y-2">
       <div>📦 <strong>Keep repository size manageable</strong></div>
       <div>🗂️ <strong>Use Git LFS for large files</strong></div>
       <div>🧹 <strong>Regular garbage collection</strong></div>
       <div>📈 <strong>Monitor repository metrics</strong></div>
-      <div>🔍 <strong>Analyze repository with git-sizer</strong></div>
+      <div>🔍 <strong>Analyze itory with git-sizer</strong></div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Git Configuration</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Git Configuration</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
         # Optimize for performance<br>
@@ -2686,7 +2155,7 @@ transition: fade-out
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Workflow Optimization</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Workflow Optimization</span></h3>
     <div class="text-sm space-y-2">
       <div>⚡ <strong>Use shallow clones for CI</strong></div>
       <div>🎯 <strong>Optimize pipeline triggers</strong></div>
@@ -2694,10 +2163,10 @@ transition: fade-out
       <div>🔄 <strong>Parallel job execution</strong></div>
       <div>📊 <strong>Monitor build performance</strong></div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">CI/CD Optimization</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">CI/CD Optimization</span></h3>
     <div class="text-sm space-y-2">
       <div class="bg-gray-100 p-2 rounded font-mono text-xs">
-        # GitHub Actions optimization<br>
+        # GiHub Actions optimization<br>
         - uses: actions/checkout@v3<br>
         &nbsp;&nbsp;with:<br>
         &nbsp;&nbsp;&nbsp;&nbsp;fetch-depth: 1  # Shallow clone<br><br>
@@ -2708,7 +2177,7 @@ transition: fade-out
         &nbsp;&nbsp;&nbsp;&nbsp;key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Monitoring</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Monitoring</span></h3>
     <div class="text-sm space-y-2">
       <div>📈 <strong>Track repository size growth</strong></div>
       <div>⏱️ <strong>Monitor clone/fetch times</strong></div>
@@ -2727,7 +2196,7 @@ transition: fade-out
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-</style>
+</style> -->
 
 ---
 transition: fade-out
@@ -2737,51 +2206,102 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Team Workflows</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Establish Clear Workflows</span></h3>
     <div class="text-sm space-y-2">
-      <div>📋 <strong>Establish clear Git workflows</strong></div>
-      <div>📝 <strong>Document branching strategy</strong></div>
-      <div>👥 <strong>Define code review process</strong></div>
-      <div>🎯 <strong>Set merge/PR requirements</strong></div>
-      <div>📊 <strong>Regular retrospectives</strong></div>
-      <div>🔄 <strong>Continuous improvement</strong></div>
+      <div>📋 <strong>Document branching strategy</strong> and share with team</div>
+      <div>👥 <strong>Define code review process</strong> with clear criteria</div>
+      <div>🎯 <strong>Set merge requirements</strong> (approvals, tests, etc.)</div>
+      <div>📊 <strong>Regular team retrospectives</strong> to improve processes</div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Communication</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Effective Communication</span></h3>
     <div class="text-sm space-y-2">
-      <div>💬 <strong>Clear PR descriptions</strong></div>
-      <div>🏷️ <strong>Meaningful commit messages</strong></div>
-      <div>📋 <strong>Link to issue tracking</strong></div>
-      <div>📚 <strong>Update documentation</strong></div>
-      <div>🔔 <strong>Timely PR reviews</strong></div>
-      <div>❓ <strong>Ask questions when unclear</strong></div>
+      <div>💬 <strong>Write descriptive PR titles</strong> and descriptions</div>
+      <div>🏷️ <strong>Use conventional commit messages</strong></div>
+      <div>🔗 <strong>Link PRs to issues/tickets</strong></div>
+      <div>⏰ <strong>Review PRs promptly</strong> (within 24 hours)</div>
+      <div>❓ <strong>Ask clarifying questions</strong> when needed</div>
     </div>
   </div>
   
   <div>
-    <h3 class="text-lg font-bold mb-4"><span class="text-highlight">Onboarding New Developers</span></h3>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Quality Gates</span></h3>
     <div class="text-sm space-y-2">
-      <div>📖 <strong>Git workflow documentation</strong></div>
-      <div>🛠️ <strong>Setup scripts and guides</strong></div>
-      <div>👨‍🏫 <strong>Pair programming sessions</strong></div>
-      <div>📝 <strong>Code review training</strong></div>
-      <div>🎯 <strong>Practice repositories</strong></div>
+      <div class="bg-blue-50 p-3 rounded-lg">
+        <div class="font-bold text-blue-600 mb-2">Required Before Merge:</div>
+        <div class="space-y-1">
+          <div>✅ All automated tests pass</div>
+          <div>✅ Code review approval</div>
+          <div>✅ Security scans clear</div>
+          <div>✅ Documentation updated</div>
+        </div>
+      </div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Knowledge Sharing</span></h3>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Knowledge Sharing</span></h3>
     <div class="text-sm space-y-2">
-      <div>📚 <strong>Maintain team wiki</strong></div>
-      <div>🎤 <strong>Regular tech talks</strong></div>
-      <div>💡 <strong>Share Git tips & tricks</strong></div>
-      <div>🏆 <strong>Celebrate good practices</strong></div>
-      <div>🔍 <strong>Code review feedback</strong></div>
+      <div>📚 <strong>Maintain team documentation</strong></div>
+      <div>🎤 <strong>Share Git tips in team meetings</strong></div>
+      <div>👨‍🏫 <strong>Pair programming for complex changes</strong></div>
+      <div>🏆 <strong>Recognize good Git practices</strong></div>
     </div>
-    <h3 class="text-lg font-bold mb-4 mt-6"><span class="text-highlight">Quality Gates</span></h3>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Onboarding New Developers
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Setup & Documentation</span></h3>
     <div class="text-sm space-y-2">
-      <div class="bg-gray-100 p-2 rounded">
-        <div>✅ All tests pass</div>
-        <div>✅ Code coverage threshold met</div>
-        <div>✅ Security scans pass</div>
-        <div>✅ Performance benchmarks</div>
-        <div>✅ Documentation updated</div>
+      <div>📖 <strong>Git workflow guide</strong> with team-specific practices</div>
+      <div>🛠️ <strong>Automated setup scripts</strong> for development environment</div>
+      <div>📋 <strong>Checklist for new developers</strong></div>
+      <div>🎯 <strong>Practice repository</strong> for learning Git workflows</div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Training Approach</span></h3>
+    <div class="text-sm space-y-2">
+      <div>👨‍🏫 <strong>Pair programming sessions</strong> for first few PRs</div>
+      <div>📝 <strong>Code review training</strong> - both giving and receiving</div>
+      <div>🎪 <strong>Demo Git commands</strong> and team workflows</div>
+      <div>💡 <strong>Share common Git scenarios</strong> and solutions</div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Onboarding Checklist</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-green-50 p-3 rounded-lg">
+        <div class="font-bold text-green-600 mb-2">Week 1 Goals:</div>
+        <div class="space-y-1">
+          <div>□ Git and development tools installed</div>
+          <div>□ Repository access configured</div>
+          <div>□ First practice PR submitted</div>
+          <div>□ Team workflow documentation read</div>
+        </div>
+      </div>
+      <div class="bg-blue-50 p-3 rounded-lg">
+        <div class="font-bold text-blue-600 mb-2">Week 2-3 Goals:</div>
+        <div class="space-y-1">
+          <div>□ Participated in code reviews</div>
+          <div>□ Resolved first merge conflict</div>
+          <div>□ Completed first real feature</div>
+          <div>□ Comfortable with branch management</div>
+        </div>
       </div>
     </div>
   </div>
