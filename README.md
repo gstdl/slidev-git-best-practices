@@ -1,6 +1,6 @@
 # Git Best Practices
 
-https://gstdl.github.io/git-best-practices/
+https://gstdl.github.io/slidev-git-best-practices/
 
 # Made using slidev
 
