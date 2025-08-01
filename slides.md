@@ -5,7 +5,7 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: pexels-spacex-586019.jpg
 # some information about your slides (markdown enabled)
-title: "Git Best Practices"
+title: "Git"
 info: "Git best practices"
 # apply unocss classes to the current slide
 class: text-left
