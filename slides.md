@@ -2198,6 +2198,164 @@ transition: fade-out
 transition: fade-out
 ---
 
+# Software Versioning
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Semantic Versioning (SemVer)</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        MAJOR.MINOR.PATCH<br>
+        Example: 2.4.1
+      </div>
+      <div><strong>MAJOR:</strong> Breaking changes</div>
+      <div><strong>MINOR:</strong> New features (backward compatible)</div>
+      <div><strong>PATCH:</strong> Bug fixes (backward compatible)</div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Git Tags</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Create annotated tag<br>
+        git tag -a v1.2.0 -m "Release version 1.2.0"<br>
+        # Push tags to remote<br>
+        git push --tags<br>
+        # List all tags<br>
+        git tag -l<br>
+        # Checkout specific version<br>
+        git checkout v1.2.0
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Version Strategies</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-blue-100 p-2 rounded">
+        <div class="font-bold text-blue-600">📅 Calendar Versioning:</div>
+        <div class="text-xs">Example: 2024.03.15 (Ubuntu style)</div>
+      </div>
+      <div class="bg-green-100 p-2 rounded">
+        <div class="font-bold text-green-600">🔢 Sequential Versioning:</div>
+        <div class="text-xs">Example: 1.0, 2.0, 3.0 (simple increments)</div>
+      </div>
+      <div class="bg-purple-100 p-2 rounded">
+        <div class="font-bold text-purple-600">🏷️ Named Releases:</div>
+        <div class="text-xs">Example: Codenames + version (Android)</div>
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">SemVer Examples</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        1.0.0 → 1.0.1 (Bug fix)<br>
+        1.0.1 → 1.1.0 (New feature)<br>
+        1.1.0 → 2.0.0 (Breaking change)<br><br>
+        Pre-release: 2.0.0-alpha.1<br>
+        Build metadata: 1.0.0+20130313144700
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+# Release Management & Best Practices
+
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Release Management</span></h3>
+    <div class="text-sm space-y-2">
+      <div>🏷️ <strong>Tag every release</strong> with descriptive messages</div>
+      <div>📝 <strong>Maintain changelog</strong> for each version</div>
+      <div>🔄 <strong>Automate versioning</strong> with CI/CD pipelines</div>
+      <div>📦 <strong>Create release notes</strong> for stakeholders</div>
+    </div>
+    <!-- <h3 class="text-lg font-bold mb-2 mt-6"><span class="text-highlight">Automated Versioning</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        # Using conventional commits<br>
+        feat: new feature → MINOR bump<br>
+        fix: bug fix → PATCH bump<br>
+        BREAKING CHANGE: → MAJOR bump<br><br>
+        # Tools: semantic-release, standard-version<br>
+        npm install --save-dev semantic-release
+      </div>
+    </div> -->
+  </div>
+  
+  <div>
+    <!-- <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Changelog Format</span></h3>
+    <div class="text-sm space-y-2">
+      <div class="bg-gray-100 p-2 rounded font-mono text-xs">
+        ## [2.1.0] - 2024-01-15<br>
+        ### Added<br>
+        - New user authentication system<br>
+        - API rate limiting<br><br>
+        ### Changed<br>
+        - Improved error handling<br><br>
+        ### Fixed<br>
+        - Memory leak in cache system<br><br>
+        ### Deprecated<br>
+        - Old authentication method
+      </div>
+    </div> -->
+    <h3 class="text-lg font-bold mb-2"><span class="text-highlight">Release Workflow</span></h3>
+    <div class="text-sm space-y-2">
+      <div>1. <strong>Code freeze</strong> on release branch</div>
+      <div>2. <strong>Final testing</strong> and bug fixes</div>
+      <div>3. <strong>Update version</strong> and changelog</div>
+      <div>4. <strong>Create release tag</strong></div>
+      <div>5. <strong>Deploy to production</strong></div>
+      <div>6. <strong>Publish release notes</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-8 bg-yellow-50 p-4 rounded-lg">
+  <h4 class="font-bold text-yellow-600 mb-3">💡 Best Practices</h4>
+  <div class="grid grid-cols-2 gap-4 text-sm">
+    <div>
+      <div>🎯 <strong>Be consistent</strong> with versioning scheme</div>
+      <div>📋 <strong>Document breaking changes</strong> clearly</div>
+      <div>🔒 <strong>Never modify released tags</strong></div>
+    </div>
+    <div>
+      <div>🚀 <strong>Automate version bumping</strong> where possible</div>
+      <div>📊 <strong>Include metadata</strong> in release artifacts</div>
+      <div>🏆 <strong>Celebrate major milestones</strong> with team</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.text-highlight {
+  background-color: #2B90B6;
+  background-size: 100%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
 # Team Collaboration Best Practices
 
 <div class="grid grid-cols-2 gap-8">
