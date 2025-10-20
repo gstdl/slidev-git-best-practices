@@ -500,7 +500,7 @@ transition: fade-out
   
   <div>
     <div class="flex justify-center">
-      <img src="./src/ideal git flow.png" alt="GitHub Flow Diagram" class="max-w-full h-auto rounded-lg shadow-lg" />
+      <img src="/ideal git flow.png" alt="GitHub Flow Diagram" class="max-w-full h-auto rounded-lg shadow-lg" />
     </div>
   </div>
 </div>
@@ -824,7 +824,7 @@ transition: fade-out
 
 <div class="grid grid-cols-2 gap-8 h-full">
   <div class="flex justify-center items-center">
-    <img src="./src/git-commands.gif" alt="Git Commands Demo" class="max-w-full max-h-96 object-contain rounded-lg shadow-lg" />
+    <img src="/git-commands.gif" alt="Git Commands Demo" class="max-w-full max-h-96 object-contain rounded-lg shadow-lg" />
   </div>
   
   <div class="flex flex-col justify-center">
